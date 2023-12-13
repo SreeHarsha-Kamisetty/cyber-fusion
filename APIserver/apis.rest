@@ -10,16 +10,16 @@ Content-Type: application/json
 }
 
 ### 
-POST http://localhost:3000/hotels
+POST https://cyberfusionapi.onrender.com/hotels
 Content-Type: application/json
 
 {
-      "name": "Park Hotel Winterthur",
-      "address": "Stadthausstrasse 4, Winterthur, Zurich (region), Switzerland",
-      "price": 268,
+      "name": "VitalBoutique Hotel Zurzacherhof",
+      "address": "Dr. Martin Erb-Strasse 5, Bad Zurzach, Zurich (region), Switzerland",
+      "price": 260,
       "discount": 0.5,
-      "rating": 4.7,
-      "image": "./images/Switzerland/Zurich/3.jpg",
+      "rating": 4.3,
+      "image": "./images/Switzerland/Zurich/5.jpg",
       "region": "Zurich",
       "country": "Switzerland"
 }
