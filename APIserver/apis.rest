@@ -10,16 +10,19 @@ Content-Type: application/json
 }
 
 ### 
-POST https://cyberfusionapi.onrender.com/hotels
+POST http://localhost:3000/hotels
 Content-Type: application/json
 
 {
-      "name": "VitalBoutique Hotel Zurzacherhof",
-      "address": "Dr. Martin Erb-Strasse 5, Bad Zurzach, Zurich (region), Switzerland",
-      "price": 260,
+      "name": "HOTEL aarau-WEST",
+      "address": "Muhenstrasse 58, Oberentfelden, Aargau, Switzerland",
+      "price": 216,
       "discount": 0.5,
-      "rating": 4.3,
-      "image": "./images/Switzerland/Zurich/5.jpg",
-      "region": "Zurich",
+      "rating": 4.5,
+      "image": "./images/Switzerland/Aargau/5.jpg",
+      "region": "Aargau",
       "country": "Switzerland"
 }
+
+### 
+GET http://localhost:3000/hotels

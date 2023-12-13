@@ -44,6 +44,138 @@
       "region": "Zurich",
       "country": "Switzerland",
       "id": 3
+    },
+    {
+      "id": 4,
+      "name": "Alma Hotel",
+      "address": "Mainaustrasse 24, Zurich,Zurich(region), Switzerland",
+      "price": 318,
+      "discount": 0.5,
+      "rating": 4.6,
+      "image": "./images/Switzerland/Zurich/4.jpg",
+      "region": "Zurich",
+      "country": "Switzerland"
+    },
+    {
+      "id": 5,
+      "name": "VitalBoutique Hotel Zurzacherhof",
+      "address": "Dr. Martin Erb-Strasse 5, Bad Zurzach, Zurich (region), Switzerland",
+      "price": 260,
+      "discount": 0.5,
+      "rating": 4.3,
+      "image": "./images/Switzerland/Zurich/5.jpg",
+      "region": "Zurich",
+      "country": "Switzerland"
+    },
+    {
+      "id": 6,
+      "name": "Hotel MyWay",
+      "address": "Bahnhofstrasse 6, Wallisellen, Zurich (region), Switzerland",
+      "price": 270,
+      "discount": 0.5,
+      "rating": 4.4,
+      "image": "./images/Switzerland/Zurich/6.jpg",
+      "region": "Zurich",
+      "country": "Switzerland"
+    },
+    {
+      "id": 7,
+      "name": "Altstadt Hotel",
+      "address": "Kirchgasse 4, Zürich, Zurich (region), Switzerland",
+      "price": 320,
+      "discount": 0.5,
+      "rating": 4.4,
+      "image": "./images/Switzerland/Zurich/7.jpg",
+      "region": "Zurich",
+      "country": "Switzerland"
+    },
+    {
+      "id": 8,
+      "name": "HOTEL illuster",
+      "address": "Zürichstrasse 14, Uster, Zurich (region), Switzerland",
+      "price": 196,
+      "discount": 0.5,
+      "rating": 4.4,
+      "image": "./images/Switzerland/Zurich/8.jpg",
+      "region": "Zurich",
+      "country": "Switzerland"
+    },
+    {
+      "id": 9,
+      "name": "Alex Lake Zurich",
+      "address": "Seestrasse 182, Thalwil, Zurich (region), Switzerland",
+      "price": 336,
+      "discount": 0.3,
+      "rating": 4.7,
+      "image": "./images/Switzerland/Zurich/9.jpg",
+      "region": "Zurich",
+      "country": "Switzerland"
+    },
+    {
+      "id": 10,
+      "name": "Gasthof Pizzeria Weingarten",
+      "address": "Untere Bahnhofstrasse 8, Affoltern am Albis, Zurich (region), Switzerland",
+      "price": 200,
+      "discount": 0.5,
+      "rating": 4.7,
+      "image": "./images/Switzerland/Zurich/10.jpg",
+      "region": "Zurich",
+      "country": "Switzerland"
+    },
+    {
+      "id": 11,
+      "name": "Hotel Kettenbrücke",
+      "address": "Zollrain 16, Aarau, Aargau, Switzerland",
+      "price": 270,
+      "discount": 0.5,
+      "rating": 4.5,
+      "image": "./images/Switzerland/Aargau/1.jpg",
+      "region": "Aargau",
+      "country": "Switzerland"
+    },
+    {
+      "id": 12,
+      "name": "CASPAR das Drei-Häuser-Hotel",
+      "address": "Caspar Wolf-Weg 1, Muri, Aargau, Switzerland",
+      "price": 198,
+      "discount": 0.5,
+      "rating": 4.6,
+      "image": "./images/Switzerland/Aargau/2.jpg",
+      "region": "Aargau",
+      "country": "Switzerland"
+    },
+    {
+      "id": 13,
+      "name": "Mercure Lenzburg Krone",
+      "address": "Kronenplatz 18, Lenzburg, Aargau, Switzerland",
+      "price": 240,
+      "discount": 0.5,
+      "rating": 4.4,
+      "image": "./images/Switzerland/Aargau/3.jpg",
+      "region": "Aargau",
+      "country": "Switzerland"
+    },
+    {
+      "id": 14,
+      "name": "Blue City Hotel",
+      "address": "Haselstrasse 17, Baden, Aargau, Switzerland",
+      "price": 186,
+      "discount": 0.5,
+      "rating": 4.4,
+      "image": "./images/Switzerland/Aargau/4.jpg",
+      "region": "Aargau",
+      "country": "Switzerland"
+    },
+    {
+      "id": 15,
+      "name": "HOTEL aarau-WEST",
+      "address": "Muhenstrasse 58, Oberentfelden, Aargau, Switzerland",
+      "price": 216,
+      "discount": 0.5,
+      "rating": 4.5,
+      "image": "./images/Switzerland/Aargau/5.jpg",
+      "region": "Aargau",
+      "country": "Switzerland"
     }
   ]
 }
