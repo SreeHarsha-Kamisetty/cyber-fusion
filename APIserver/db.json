@@ -1,0 +1,49 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "harsha",
+      "password": "password"
+    },
+    {
+      "id": 2,
+      "username": "Sree Harsha",
+      "password": "password"
+    }
+  ],
+  "hotels": [
+    {
+      "id": 1,
+      "name": "Glockenhof Zürich",
+      "address": "Sihlstrasse 31, Zürich, Zurich (region), Switzerland",
+      "price": "460",
+      "discount": 0.5,
+      "rating": 4.6,
+      "image": "./images/Switzerland/Zurich/1.jpg",
+      "region": "Zurich",
+      "country": "Switzerland"
+    },
+    {
+      "name": "Seedamm Plaza",
+      "address": "Seedammstrasse 3, Pfäffikon SZ, Zurich (region), Switzerland",
+      "price": 220,
+      "discount": 0.5,
+      "rating": 4.5,
+      "image": "./images/Switzerland/Zurich/2.jpg",
+      "region": "Zurich",
+      "country": "Switzerland",
+      "id": 2
+    },
+    {
+      "name": "Park Hotel Winterthur",
+      "address": "Stadthausstrasse 4, Winterthur, Zurich (region), Switzerland",
+      "price": 268,
+      "discount": 0.5,
+      "rating": 4.7,
+      "image": "./images/Switzerland/Zurich/3.jpg",
+      "region": "Zurich",
+      "country": "Switzerland",
+      "id": 3
+    }
+  ]
+}

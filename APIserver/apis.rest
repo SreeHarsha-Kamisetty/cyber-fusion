@@ -1,0 +1,25 @@
+GET http://localhost:3000/posts
+
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "username":"Sree Harsha",
+    "password":"passwo"
+}
+
+### 
+POST http://localhost:3000/hotels
+Content-Type: application/json
+
+{
+      "name": "Park Hotel Winterthur",
+      "address": "Stadthausstrasse 4, Winterthur, Zurich (region), Switzerland",
+      "price": 268,
+      "discount": 0.5,
+      "rating": 4.7,
+      "image": "./images/Switzerland/Zurich/3.jpg",
+      "region": "Zurich",
+      "country": "Switzerland"
+}
