@@ -14,13 +14,13 @@ POST http://localhost:3000/hotels
 Content-Type: application/json
 
 {
-      "name": "HOTEL aarau-WEST",
-      "address": "Muhenstrasse 58, Oberentfelden, Aargau, Switzerland",
-      "price": 216,
+      "name": "Riverside Plaza Hotel",
+      "address": "Waterfront Street, Kleinbasel Basel Basel (region), Switzerland",
+      "price": 350,
       "discount": 0.5,
-      "rating": 4.5,
-      "image": "./images/Switzerland/Aargau/5.jpg",
-      "region": "Aargau",
+      "rating": 4.8,
+      "image": "./images/Switzerland/Basel/10.jpg",
+      "region": "Basel",
       "country": "Switzerland"
 }
 
