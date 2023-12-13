@@ -176,6 +176,215 @@
       "image": "./images/Switzerland/Aargau/5.jpg",
       "region": "Aargau",
       "country": "Switzerland"
+    },
+    {
+      "id": 16,
+      "name": "Centurion-Towerhotel",
+      "address": "Steinackerstrasse 1, Windisch-Brugg, Aargau, Switzerland",
+      "price": 180,
+      "discount": 0.4,
+      "rating": 4.6,
+      "image": "./images/Switzerland/Aargau/6.jpg",
+      "region": "Aargau",
+      "country": "Switzerland"
+    },
+    {
+      "id": 17,
+      "name": "Hotel Herberge",
+      "address": "Wynentalstrasse 9a, Teufenthal, Aargau, Switzerland",
+      "price": 200,
+      "discount": 0.3,
+      "rating": 4.5,
+      "image": "./images/Switzerland/Aargau/7.jpg",
+      "region": "Aargau",
+      "country": "Switzerland"
+    },
+    {
+      "id": 18,
+      "name": "Trafo Hotel",
+      "address": "Bruggerstrasse 56, Baden, Aargau, Switzerland",
+      "price": 240,
+      "discount": 0.5,
+      "rating": 4.3,
+      "image": "./images/Switzerland/Aargau/8.jpg",
+      "region": "Aargau",
+      "country": "Switzerland"
+    },
+    {
+      "id": 19,
+      "name": "Hotel B&B Rothrist Olten",
+      "address": "Helblingstrasse 9, Rothrist, Aargau, Switzerland",
+      "price": 110,
+      "discount": 0.5,
+      "rating": 3.9,
+      "image": "./images/Switzerland/Aargau/9.jpg",
+      "region": "Aargau",
+      "country": "Switzerland"
+    },
+    {
+      "id": 20,
+      "name": "Hotel Engel Zofingen",
+      "address": "Engelgasse 4, Zofingen, Aargau, Switzerland",
+      "price": 167,
+      "discount": 0.5,
+      "rating": 4.6,
+      "image": "./images/Switzerland/Aargau/10.jpg",
+      "region": "Aargau",
+      "country": "Switzerland"
+    },
+    {
+      "id": 21,
+      "name": "Hotel du Parc",
+      "address": "Römerstrasse 24, Baden, Aargau, Switzerland",
+      "price": 164,
+      "discount": 0.3,
+      "rating": 4.3,
+      "image": "./images/Switzerland/Aargau/11.jpg",
+      "region": "Aargau",
+      "country": "Switzerland"
+    },
+    {
+      "id": 22,
+      "name": "B&B Hotel Oftringen",
+      "address": "Campingweg 19, Oftringen, Aargau, Switzerland",
+      "price": 110,
+      "discount": 0.5,
+      "rating": 4.5,
+      "image": "./images/Switzerland/Aargau/12.jpg",
+      "region": "Aargau",
+      "country": "Switzerland"
+    },
+    {
+      "id": 23,
+      "name": "Landhotel Löwen",
+      "address": "Hauptstrasse 4, Meisterschwanden, Aargau, Switzerland",
+      "price": 200,
+      "discount": 0.3,
+      "rating": 4.5,
+      "image": "./images/Switzerland/Aargau/13.jpg",
+      "region": "Aargau",
+      "country": "Switzerland"
+    },
+    {
+      "id": 24,
+      "name": "Hotel Victoria",
+      "address": "Hauptstrasse 4, Meisterschwanden, Aargau, Switzerland",
+      "price": 300,
+      "discount": 0.5,
+      "rating": 4.6,
+      "image": "./images/Switzerland/Basel/1.jpg",
+      "region": "Basel",
+      "country": "Switzerland"
+    },
+    {
+      "id": 25,
+      "name": "DASBREITEHOTEL am Rhein",
+      "address": "Zürcherstrasse 149, Basel, Basel (region), Switzerland",
+      "price": 190,
+      "discount": 0.5,
+      "rating": 4.5,
+      "image": "./images/Switzerland/Basel/2.jpg",
+      "region": "Basel",
+      "country": "Switzerland"
+    },
+    {
+      "id": 26,
+      "name": "Hotel Schweizerhof Basel",
+      "address": "Centralbahnplatz 1, Basel, Basel (region), Switzerland",
+      "price": 220,
+      "discount": 0.5,
+      "rating": 4.5,
+      "image": "./images/Switzerland/Basel/3.jpg",
+      "region": "Basel",
+      "country": "Switzerland"
+    },
+    {
+      "id": 27,
+      "name": "Hotel Restaurant Sonne Sissach",
+      "address": "Hauptstrasse 83, Sissach, Basel (region), Switzerland",
+      "price": 250,
+      "discount": 0.5,
+      "rating": 4.5,
+      "image": "./images/Switzerland/Basel/4.jpg",
+      "region": "Basel",
+      "country": "Switzerland"
+    },
+    {
+      "id": 28,
+      "name": "Hotel Hofmatt",
+      "address": "Baselstrasse 88, Münchenstein, Basel (region), Switzerland",
+      "price": 240,
+      "discount": 0.5,
+      "rating": 4.5,
+      "image": "./images/Switzerland/Basel/5.jpg",
+      "region": "Basel",
+      "country": "Switzerland"
+    },
+    {
+      "id": 29,
+      "name": "HOTEL ENGEL Business & Lifestyle",
+      "address": "Kasernenstrasse 10, Liestal, Basel (region), Switzerland",
+      "price": 224,
+      "discount": 0.5,
+      "rating": 4.5,
+      "image": "./images/Switzerland/Basel/6.jpg",
+      "region": "Basel",
+      "country": "Switzerland"
+    },
+    {
+      "id": 30,
+      "name": "Seiler's Hotel Radackerhof",
+      "address": "Rheinstrasse 93, Liestal, Basel (region), Switzerland",
+      "price": 340,
+      "discount": 0.6,
+      "rating": 4.5,
+      "image": "./images/Switzerland/Basel/7.jpg",
+      "region": "Basel",
+      "country": "Switzerland"
+    },
+    {
+      "id": 31,
+      "name": "Adagio Basel City Aparthotel",
+      "address": "Hammerstrasse 46, Basel, Basel (region), Switzerland",
+      "price": 270,
+      "discount": 0.6,
+      "rating": 4.5,
+      "image": "./images/Switzerland/Basel/8.jpg",
+      "region": "Basel",
+      "country": "Switzerland"
+    },
+    {
+      "id": 32,
+      "name": "ART HOUSE Basel",
+      "address": "Steinenvorstadt 42, Basel, Basel (region), Switzerland",
+      "price": 170,
+      "discount": 0.4,
+      "rating": 4.5,
+      "image": "./images/Switzerland/Basel/9.jpg",
+      "region": "Basel",
+      "country": "Switzerland"
+    },
+    {
+      "id": 33,
+      "name": "Alpine Retreat Hotel",
+      "address": "Mountain View Avenue, Basel Basel (region), Switzerland",
+      "price": 280,
+      "discount": 0.5,
+      "rating": 4.7,
+      "image": "./images/Switzerland/Basel/9.jpg",
+      "region": "Basel",
+      "country": "Switzerland"
+    },
+    {
+      "id": 34,
+      "name": "Riverside Plaza Hotel",
+      "address": "Waterfront Street, Kleinbasel Basel Basel (region), Switzerland",
+      "price": 350,
+      "discount": 0.5,
+      "rating": 4.8,
+      "image": "./images/Switzerland/Basel/10.jpg",
+      "region": "Basel",
+      "country": "Switzerland"
     }
   ]
 }
