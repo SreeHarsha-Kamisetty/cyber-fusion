@@ -1,0 +1,209 @@
+*{
+    box-sizing:border-box;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.main{
+    padding: 0% 5%;
+    background-image: url(img/background_img.jpg);
+}
+.a-one{
+    background-color: rgb(242, 242, 242);
+}
+
+.a-container-div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.a-container-text{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    padding: 2rem;
+    font-size: 5vh;
+}
+
+.a-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.a-each-container{
+    display: flex;
+    flex-direction: column;
+   width: 29.5vw;
+   height: 100vh;
+   padding: 1vw;
+}
+.a-eachCard-img{
+    overflow: hidden;
+    height: 35vh;
+    min-height: 30%;
+    border-radius: 3%;
+}
+.a-eachCard-text{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 3.3vh;
+}
+.a-container-span{
+    font-size: 2vh;
+}
+.a-container-button{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+    padding: 1.5vh 3.5vh;
+    background-color: white;
+    border: none;
+    border-radius: 30%;
+    font-size: 2vh;
+}
+.a-img-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60vh;
+    padding: 1.3rem;
+}
+.a-couple-img{
+    width: 50%;
+    border-radius: 3%;
+}
+.background-imgText-div{
+    background: url(img/card_3_img.jpg);
+    background-color: rgba(0, 0, 0);
+    background-color: rgba(0, 0, 1, 0.5);
+    height: 100%;
+    width: 50%;
+    background-repeat: round;
+    padding: 20vh 2vh 3vh 3vh;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3vh;
+}
+.a-img-button{
+    background-color: red;
+    border: none;
+    color: white;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: none;
+    border-radius: 30%;
+    font-size: 2vh;
+    font-weight: 100;
+    padding: 1.5vh 3.5vh;
+}
+.a-questions-section{
+    display: flex;
+    flex-direction: row;
+    padding: 1.3rem;
+}
+.a-qsection{
+    width: 45%;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 5vh ;
+    font-weight: 550;
+    text-wrap: wrap;
+    text-align: start;
+    padding-top: 10vh;
+    padding-left: 4vw;
+    padding-bottom: 10vh;
+    letter-spacing: 0.2vw;
+    word-spacing: 1vw;
+}
+.a-list{
+    width: 55%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3vh;
+    padding: 4vh;
+    letter-spacing: 0.1vw;
+    word-spacing: 0.1vw;
+}
+ul{
+    list-style-image: url(img/plus_sign_img.png);
+}
+li{
+    padding: 2vh;
+}
+.a-anymore-questions{
+    display: flex;
+    flex-direction: row;
+    padding: 1.3rem;
+    color: white;
+    /* background-image: url(img/background_img.jpg); */
+}
+.a-ask{
+    width: 45%;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-size: 5vh ;
+    font-weight: 550;
+    text-wrap: wrap;
+    text-align: start;
+    padding-top: 10vh;
+    padding-left: 4vw;
+    padding-bottom: 10vh;
+    letter-spacing: 0.2vw;
+    word-spacing: 1vw;
+}
+.a-contact-section{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.5vh;
+    padding: 10vh;
+    padding-left: 5.5vh;
+    letter-spacing: 0.1vw;
+    word-spacing: 0.1vw;
+}
+.a-contact-details{
+    display: flex;
+    flex-direction: row;
+}
+.a-each-contact{
+    padding: 2vw;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    padding: 3vh;
+}
+.a-hotelcard-logo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 5vh;
+    font-weight: 50;
+    color: rgb(54, 52, 52);
+    width: 50%;
+    text-align: start;
+    align-items: center;
+    padding-top: 2vh;
+}
+.a-logopack{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    color: rgb(109, 104, 104);
+    text-align: end;
+    align-items: end;
+}
+.a-logo-img-pack{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    text-align: end;
+    padding: 2vh;
+}
+.a-logo-img{
+    height: 30px;
+    margin: 2vh;
+    border-radius: 10%;
+}
