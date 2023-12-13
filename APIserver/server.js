@@ -38,6 +38,17 @@ server.post('/register',(req,res) =>{
     router.db.get('users').push(newUser).write();
     res.json({message: 'User Registered'});
 })
+server.post('/hotels',(req,res) =>{
+    const {name,address,price,discount,rating,image,region,country} = req.body;
+    const hotelId = router.db.get('hotels').value().reduce((maxId,hotel) =>Math.max(maxId,hotel.id),0);
+    const newhotelId = hotelId +1;
+    const newhotel = {
+        id:newhotelId,
+        name,address,price,discount,rating,image,region,country
+    }
+    router.db.get('hotels').push(newhotel).write();
+    res.json({newhotel});
+})
 server.use(middlewares)
 server.use(router)
 const PORT = 3000;
