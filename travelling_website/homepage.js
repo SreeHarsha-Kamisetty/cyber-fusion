@@ -51,3 +51,23 @@ function showRegistrationPage() {
     pregistration.style.display = 'none';
     document.body.style.overflow = 'auto';
 }
+
+// Bottom cards----Top offers--
+
+let hotelURL = "https://apicyberfusion.onrender.com/hotels";
+async function fetchData(url){
+  try{
+    let res = await fetch(`${url}?_limit=20`);
+    let data = await res.json();
+    renderCard(data);
+  }
+  catch(error){
+    console.log("error");
+  }
+}
+fetchData(hotelURL);
+
+function renderCard(item){
+  let card = document.createElement("div");
+}
+
