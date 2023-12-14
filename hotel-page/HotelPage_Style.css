@@ -1,28 +1,32 @@
-*{
+/* *{
     box-sizing:border-box;
     margin: 0px;
     padding: 0px;
     list-style: none;
     text-decoration: none;
     transition: all 0.3s;
-    font-family: 'Arial', sans-serif;
+} */
+
+
+/* Header Start*/
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
-.main{
-    background-image: url(img/background_img.jpg);
-    
-}
-.a-one{
-    padding: 0% 5%;
-    background-color: rgb(242, 242, 242);
-   
+#ptop {
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    color: #fff; 
 }
 #pnav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    background-color: #fff; /* White background for the navbar */
+    background-color: #fff;
     position: relative; /* Needed for z-index to work */
     z-index: 2;
 }
@@ -31,6 +35,7 @@
     display: flex;
     align-items: center;
 }
+
 #plogo {
     height: 70px;
     width: 150px;
@@ -42,10 +47,11 @@
     display: flex;
     gap: 20px;
 }
+
 .plink {
     color: #141414;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 600;
     transition: color 0.3s;
 }
@@ -60,9 +66,11 @@
     align-items: center;
 }
 
-#pmembership, #plogin {
+#pmembership,
+#plogin {
     padding: 14px 30px;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 500;
     border: none;
     border-radius: 20px;
     cursor: pointer;
@@ -82,179 +90,155 @@
     color: #fff;
 }
 
-.a-container-div{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
 
-.a-container-text{
-    font-weight: 400;
-    text-align: center;
-    padding: 2rem;
-    font-size: 5vh;
-}
+/* Footer styles (Bottom) */
+/* #pbuttom {
+    background-color: #333;
+    height: 40px;
+} */
+/* Modal styles */
 
-.a-container{
-    display: flex;
-    flex-direction: row;
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    
-}
-.a-each-container{
-    display: flex;
-    flex-direction: column;
-   width: 29.5vw;
-   padding: 1vw;
-   
-}
-.a-eachCard-img{
-    overflow: hidden;
-    height: 35vh;
-    min-height: 30%;
-    border-radius: 3%;
-    
-}
-.a-eachCard-text{
-    font-weight: 500;
-    font-size: 3.3vh;
-    
-}
-.a-container-span{
-    font-size: 2vh;
-    
-    padding-right: 8vw;
-}
-.a-container-button{
-    font-weight: 100;
-    padding: 1.5vh 3.5vh;
-    background-color: white;
-    border: none;
-    border-radius: 30%;
-    font-size: 2vh;
-   
-}
-.a-img-container{
-    width: 100%;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-   
-}
-.a-img-container-radius{
-    width: 100%;
-    border-radius: 3%;
-    height: 60vh;
-    display: flex;
-    flex-direction: row;
-    
-}
-.a-couple-img{
-    width: 50%;
-   
-}
-.background-imgText-div{
-    background: url(img/card_3_img.jpg);
-    background-color: rgba(0, 0, 0);
-    background-color: rgba(0, 0, 1, 0.5);
     height: 100%;
-    width: 50%;
-    background-repeat: round;
-    padding: 20vh 2vh 3vh 3vh;
-    color: white;
-    font-size: 3vh;
-    
-}
-.a-img-button{
-    background-color: red;
-    border: none;
-    color: white;
-    text-align: center;
-    border: none;
-    border-radius: 30%;
-    font-size: 2vh;
-    font-weight: 100;
-    padding: 1.5vh 3.5vh;
-    
-}
-.a-questions-section{
-    display: flex;
-    flex-direction: row;
-    padding: 1.3rem;
-    
-}
-.a-qsection{
-    width: 45%;
-    color: black;
-    font-size: 5vh ;
-    font-weight: 550;
-    text-wrap: wrap;
-    text-align: start;
-    padding-top: 10vh;
-    padding-left: 4vw;
-    padding-bottom: 10vh;
-    letter-spacing: 0.2vw;
-    word-spacing: 1vw;
-    
-}
-.a-list{
-    width: 55%;
-    font-size: 3vh;
-    padding: 4vh;
-    letter-spacing: 0.1vw;
-    word-spacing: 0.1vw;
-    
-}
-ul{
-    list-style-image: url(img/plus_sign_img.png);
-   
-}
-li{
-    padding: 2vh;
-   
-}
-.a-anymore-questions{
-    display: flex;
-    flex-direction: row;
-    padding: 1.3rem;
-    color: white;
-   
-}
-.a-ask{
-    width: 45%;
-    color: black;
-    color: white;
-    font-size: 5vh ;
-    font-weight: 550;
-    text-wrap: wrap;
-    text-align: start;
-    padding-top: 10vh;
-    padding-left: 4vw;
-    padding-bottom: 10vh;
-    letter-spacing: 0.2vw;
-    word-spacing: 1vw;
-    
-}
-.a-contact-section{
-    display: flex;
-    flex-direction: column;
-    width: 55%;
-    font-size: 2.5vh;
-    padding: 10vh;
-    padding-left: 5.5vh;
-    letter-spacing: 0.1vw;
-    word-spacing: 0.1vw;
-    
-}
-.a-contact-details{
-    display: flex;
-    flex-direction: row;
-    
-}
-.a-each-contact{
-    padding: 2vw;
-    
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay background */
+  
 }
 
+  
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 500px;
+    width: 600px;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .password-container {
+    position: relative;
+    margin-bottom: 15px;
+  }
+  
+  .show-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #555;
+  }
+.hplogin{
+    font-size: 40px;
+    text-decoration: underline;
+    color: rgb(60, 58, 58);
+    margin-top: 25px;
+    margin-left: 20px;
+}
+.lpemail{
+    font-size: 26px;
+}
+#loginForm{
+    margin-top: 55px;
+    margin-left: 20px;
+}
+.pinput{
+    height: 50px;
+    width: 470px;
+    margin-top: 15px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding-left: 15px;
+    font-size: 16px;
+}
+.show-password{
+    margin-top: 30px;
+    margin-right: 110px;
+    color: #141414;
+    font-weight: 500;
+}
+.ploginbtn{
+    height: 50px;
+    width: 488px;
+    border-radius: 10px;
+    background-color: #f51111;
+    color: #f7f3f3;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 21px;
+    transition: background-color 0.4s, color 0.4s, transform 0.4s;
+}
+.ploginbtn:hover{
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+    /* transform: scale(1); */
+}
+#registrationPage {
+    display: none;
+    position: fixed;
+    top: 55%;
+    width: 500px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f8f6f6;
+    padding: 20px;
+    border-radius: 10px;
+    
+    /* z-index: 3; */
+  }
+  
+  #registrationPage h2 {
+    color: #333;
+  }
+  #registrationForm{
+    margin-top: 15px;
+  }
+  .reglabel{
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .regInp{
+    width: 400px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    margin-top: 8px;
+  }
+.pregg{
+    margin-top: 15px;
+}
+#createAccountBtn{
+    border: none;
+    border: 1px solid white;
+    padding: 8px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#createAccountBtn:hover{
+    background-color: grey;
+    color: whitesmoke;
+}
+/* Header end */
+
+
+/* Footer  Start*/
 .footercontainer{
     margin: 3%;
 }
@@ -404,3 +388,4 @@ font-family: 'Pixelify Sans', sans-serif;
 font-family: 'Plus Jakarta Sans', sans-serif;
 font-family: 'Poppins', sans-serif;
 }
+/* Footer End */

@@ -19,7 +19,7 @@
       "price": "460",
       "discount": 0.5,
       "rating": 4.6,
-      "image": "./images/Switzerland/Zurich/1.jpg",
+      "image":"./images/Switzerland/Zurich/1.jpg",
       "region": "Zurich",
       "country": "Switzerland"
     },
