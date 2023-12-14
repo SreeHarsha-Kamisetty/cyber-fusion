@@ -18,10 +18,10 @@ main {
 /* Top section styles */
 #ptop {
     background: url(./assets/alps-switzerland-mountains-village-lake-house.jpg) center/cover no-repeat;
-    height: 50vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
-    color: #e8dcdc; /* Text color for the top section */
+    color: #fff; 
 }
 
 #pnav {
@@ -103,15 +103,17 @@ main {
 }
 
 #phead {
-    font-size: 36px;
+    font-size: 50px;
+    color: #fff;
     margin: 20px;
+    font-weight: 600;
 }
 
 /* Footer styles (Bottom) */
-#pbuttom {
+/* #pbuttom {
     background-color: #333;
     height: 40px;
-}
+} */
 /* Modal styles */
 
 .modal {
