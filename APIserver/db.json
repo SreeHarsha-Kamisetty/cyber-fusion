@@ -16,7 +16,7 @@
       "id": 1,
       "name": "Glockenhof Zürich",
       "address": "Sihlstrasse 31, Zürich, Zurich (region), Switzerland",
-      "price": "460",
+      "price": 460,
       "discount": 0.5,
       "rating": 4.6,
       "image":"./images/Switzerland/Zurich/1.jpg",
