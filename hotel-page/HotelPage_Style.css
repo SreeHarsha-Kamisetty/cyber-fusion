@@ -9,12 +9,24 @@
 
 
 /* Header Start*/
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#ptop {
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    color: #fff; 
+}
 #pnav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    background-color: #fff; /* White background for the navbar */
+    background-color: #fff;
     position: relative; /* Needed for z-index to work */
     z-index: 2;
 }
@@ -30,6 +42,7 @@
     border-radius: 10px;
     margin-right: 20px;
 }
+
 #linksp {
     display: flex;
     gap: 20px;
@@ -52,6 +65,7 @@
     display: flex;
     align-items: center;
 }
+
 #pmembership,
 #plogin {
     padding: 14px 30px;
@@ -69,10 +83,157 @@
     margin-right: 10px;
     font-size: 19px;
 }
+
 #pmembership:hover,
 #plogin:hover {
     background-color: #333;
     color: #fff;
+}
+
+
+/* Footer styles (Bottom) */
+/* #pbuttom {
+    background-color: #333;
+    height: 40px;
+} */
+/* Modal styles */
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay background */
+  
+}
+
+  
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 500px;
+    width: 600px;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .password-container {
+    position: relative;
+    margin-bottom: 15px;
+  }
+  
+  .show-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #555;
+  }
+.hplogin{
+    font-size: 40px;
+    text-decoration: underline;
+    color: rgb(60, 58, 58);
+    margin-top: 25px;
+    margin-left: 20px;
+}
+.lpemail{
+    font-size: 26px;
+}
+#loginForm{
+    margin-top: 55px;
+    margin-left: 20px;
+}
+.pinput{
+    height: 50px;
+    width: 470px;
+    margin-top: 15px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding-left: 15px;
+    font-size: 16px;
+}
+.show-password{
+    margin-top: 30px;
+    margin-right: 110px;
+    color: #141414;
+    font-weight: 500;
+}
+.ploginbtn{
+    height: 50px;
+    width: 488px;
+    border-radius: 10px;
+    background-color: #f51111;
+    color: #f7f3f3;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 21px;
+    transition: background-color 0.4s, color 0.4s, transform 0.4s;
+}
+.ploginbtn:hover{
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+    /* transform: scale(1); */
+}
+#registrationPage {
+    display: none;
+    position: fixed;
+    top: 55%;
+    width: 500px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f8f6f6;
+    padding: 20px;
+    border-radius: 10px;
+    
+    /* z-index: 3; */
+  }
+  
+  #registrationPage h2 {
+    color: #333;
+  }
+  #registrationForm{
+    margin-top: 15px;
+  }
+  .reglabel{
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .regInp{
+    width: 400px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    margin-top: 8px;
+  }
+.pregg{
+    margin-top: 15px;
+}
+#createAccountBtn{
+    border: none;
+    border: 1px solid white;
+    padding: 8px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#createAccountBtn:hover{
+    background-color: grey;
+    color: whitesmoke;
 }
 /* Header end */
 
