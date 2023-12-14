@@ -1,3 +1,4 @@
+// logn and Membership     Start------>
 //Login
 let plogIn = document.getElementById("loginModal")
 let ploginBtn = document.getElementById("plogin")
@@ -52,22 +53,24 @@ function showRegistrationPage() {
     document.body.style.overflow = 'auto';
 }
 
-// Bottom cards----Top offers--
+// Login and memberShip   end----->
+
+
+
+// Card creation   start ---->
 
 let hotelURL = "https://apicyberfusion.onrender.com/hotels";
+
 async function fetchData(url){
-  try{
-    let res = await fetch(`${url}?_limit=20`);
-    let data = await res.json();
-    renderCard(data);
-  }
-  catch(error){
-    console.log("error");
-  }
+    try{
+        let res=await fetch(`${url}?_limit=8`);
+        let data=await res.json();
+        console.log(data);
+        createCard(data);
+    }
+    catch(error){
+        console.log(error);
+    }
 }
+
 fetchData(hotelURL);
-
-function renderCard(item){
-  let card = document.createElement("div");
-}
-
