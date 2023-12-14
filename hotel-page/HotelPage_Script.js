@@ -69,7 +69,7 @@ async function fetchData(url, pageNo){
     try{
         let res=await fetch(`${url}?_limit=8&_page=${pageNo}`);
         let totalPost=res.headers.get("X-Total-Count");
-        let totalbtns=Math.ceil(totalPost/10);
+        let totalbtns=Math.ceil(totalPost/8);
 
         pagination.innerHTML=null;
         for(let i=1; i<=totalbtns; i++){
