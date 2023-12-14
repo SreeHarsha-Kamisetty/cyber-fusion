@@ -29,7 +29,7 @@ main {
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    background-color: #fff; /* White background for the navbar */
+    background-color: #fff;
     position: relative; /* Needed for z-index to work */
     z-index: 2;
 }
@@ -237,3 +237,17 @@ main {
     border: 1px solid grey;
     margin-top: 8px;
   }
+.pregg{
+    margin-top: 15px;
+}
+#createAccountBtn{
+    border: none;
+    border: 1px solid white;
+    padding: 8px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#createAccountBtn:hover{
+    background-color: grey;
+    color: whitesmoke;
+}

@@ -47,3 +47,7 @@ function showRegistrationPage() {
     document.body.style.overflow = 'hidden'; 
   }
   document.getElementById('createAccountBtn').addEventListener('click', showRegistrationPage);
+  function closeRegForm(){
+    pregistration.style.display = 'none';
+    document.body.style.overflow = 'auto';
+}
