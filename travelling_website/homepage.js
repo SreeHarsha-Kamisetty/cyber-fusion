@@ -5,7 +5,7 @@ let passInput = document.getElementById("password");
 let shwPass = document.querySelector(".show-password");
 let peamail = document.getElementById('email').value;
 let password = document.getElementById('password').value; 
-
+let mainSection = document.getElementById("container");
 function openLogin(){
     plogIn.style.display = 'block';
     document.body.style.overflow = 'hidden';
@@ -57,17 +57,51 @@ function showRegistrationPage() {
 let hotelURL = "https://apicyberfusion.onrender.com/hotels";
 async function fetchData(url){
   try{
-    let res = await fetch(`${url}?_limit=20`);
+    let res = await fetch(`${url}?_limit=5`);
     let data = await res.json();
     renderCard(data);
+    console.log(data);
   }
   catch(error){
-    console.log("error");
+    console.log(error);
   }
 }
 fetchData(hotelURL);
 
-function renderCard(item){
-  let card = document.createElement("div");
+function renderCard(data){
+  mainSection.innerHTML = "";
+  const cardList = document.createElement("div");
+  cardList.className = "p-cardlist";
+  data.forEach((item)=>{
+    let card = createCard(item);
+    cardList.append(card);
+  })
+  mainSection.append(cardList);
+}
+function createCard(item){
+  const card = document.createElement("div");
+  card.className = "p-card";
+
+  const image = document.createElement("img");
+  image.src = `../APIserver/${item.image}`;
+  card.appendChild(image);
+
+  const title = document.createElement("h3");
+  title.className = "p-title";
+  title.textContent = item.name;
+  card.appendChild(title);
+
+  const address = document.createElement("h6");
+  address.className = "p-address"
+  address.textContent = item.address;
+  card.appendChild(address);
+
+  const price = document.createElement("p");
+  price.className = "p-price"
+  price.textContent = `CHF ${item.price}`;
+  card.appendChild(price);
+
+  return card;
+
 }
 
