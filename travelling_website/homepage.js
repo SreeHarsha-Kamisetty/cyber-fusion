@@ -6,6 +6,8 @@ let shwPass = document.querySelector(".show-password");
 let peamail = document.getElementById('email').value;
 let password = document.getElementById('password').value; 
 let mainSection = document.getElementById("container");
+let pagination = document.getElementById("p-pagination");
+
 function openLogin(){
     plogIn.style.display = 'block';
     document.body.style.overflow = 'hidden';
@@ -55,9 +57,13 @@ function showRegistrationPage() {
 // Bottom cards----Top offers--
 
 let hotelURL = "https://apicyberfusion.onrender.com/hotels";
-async function fetchData(url){
+async function fetchData(url,pageNum){
   try{
-    let res = await fetch(`${url}?_limit=5`);
+    let res = await fetch(`${url}?_limit=6&_page=${pageNum||1}`);
+    
+    let totalBtn = res.headers.get("X-Total-Count");
+    let numOfBtn = Math.ceil(totalBtn/5)
+    createBtn(numOfBtn);
     let data = await res.json();
     renderCard(data);
     console.log(data);
@@ -105,3 +111,40 @@ function createCard(item){
 
 }
 
+// Buttons//
+let currentPage = 1; // Initialize with the first page
+const maxButtonsToShow = 5;
+
+function createBtn(number) {
+  pagination.innerHTML = "";
+
+  const startPage = Math.max(1, currentPage - Math.floor(maxButtonsToShow / 2));
+  const endPage = Math.min(number, startPage + maxButtonsToShow - 1);
+
+  if (currentPage > 1) {
+    const prevBtn = createPaginationButton('Prev', currentPage - 1);
+    pagination.appendChild(prevBtn);
+  }
+
+  for (let i = startPage; i <= endPage; i++) {
+    const pageBtn = createPaginationButton(i, i);
+    pagination.appendChild(pageBtn);
+  }
+
+  if (currentPage < number) {
+    const nextBtn = createPaginationButton('Next', currentPage + 1);
+    pagination.appendChild(nextBtn);
+  }
+}
+
+function createPaginationButton(text, pageNum) {
+  const pageBtn = document.createElement('button');
+  pageBtn.className = "pagination-btn"
+  pageBtn.innerText = text;
+  pageBtn.addEventListener('click', () => {
+    currentPage = pageNum;
+    fetchData(hotelURL, pageNum);
+    createBtn(number);
+  });
+  return pageBtn;
+}

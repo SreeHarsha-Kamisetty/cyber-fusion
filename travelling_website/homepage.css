@@ -12,27 +12,18 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 /* Top section styles */
-#container{
-    margin-top: 30px;
-    margin-left: 85px;
-}
-#p-btm-h{
-    font-size: 40px;
-    font-style: italic;
-    margin-left: 85px;
-    margin-top: 20px;
 
-}
 #ptop {
-    background: url(./assets/alps-switzerland-mountains-village-lake-house.jpg) center/cover no-repeat;
-    height: 45vh;
+    background: url(./assets/Aussenansicht-10-scaled.webp) center/cover no-repeat;
+    height: 85vh;
     display: flex;
     flex-direction: column;
-    color: #fff; 
+    color: #faf6f6; 
+    
 }
 
 #pnav {
@@ -114,9 +105,10 @@ main {
 }
 
 #phead {
-    font-size: 50px;
-    color: #fff;
-    margin: 20px;
+    font-size: 70px;
+    color:#f8f8f8;
+    margin-top: 20px;
+    margin-bottom: 300px;
     font-weight: 600;
 }
 
@@ -134,9 +126,11 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay background */
+    background-color: rgba(0, 0, 0, 0.8);
+    
   
 }
+
 
   
   .modal-content {
@@ -144,11 +138,12 @@ main {
     top: 50%;
     left: 50%;
     height: 500px;
-    width: 600px;
+    width: 500px;
     transform: translate(-50%, -50%);
-    background-color: #fff;
+    background-color: #f8f6f6;
     padding: 20px;
     border-radius: 10px;
+    box-shadow: 3px 8px 19px 4px rgba(237,47,129,0.65);
   }
   
   .close {
@@ -187,7 +182,7 @@ main {
 }
 .pinput{
     height: 50px;
-    width: 470px;
+    width: 440px;
     margin-top: 15px;
     border: 1px solid grey;
     border-radius: 10px;
@@ -202,7 +197,7 @@ main {
 }
 .ploginbtn{
     height: 50px;
-    width: 488px;
+    width: 455px;
     border-radius: 10px;
     background-color: #f51111;
     color: #f7f3f3;
@@ -219,6 +214,9 @@ main {
     border-radius: 10px;
     /* transform: scale(1); */
 }
+.ps-reg{
+  background-color: rgba(0, 0, 0, 0.8);
+}
 #registrationPage {
     display: none;
     position: fixed;
@@ -229,29 +227,55 @@ main {
     background-color: #f8f6f6;
     padding: 20px;
     border-radius: 10px;
-    
+    margin-top: 20px;
+    box-shadow: -2px 8px 19px 6px rgba(72,213,242,0.65);
+   
     /* z-index: 3; */
   }
   
   #registrationPage h2 {
-    color: #333;
+    color: #100f0f;
+    margin-left: 10px;
   }
   #registrationForm{
-    margin-top: 15px;
+    margin-top: 10px;
   }
   .reglabel{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
+    margin-left: 10px;
   }
+  .regloginbtn{
+    height: 30px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: #f51111;
+    color: #f7f3f3;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 21px;
+    margin-left: 10px;
+    transition: background-color 0.4s, color 0.4s, transform 0.4s;
+  }
+  .regloginbtn:hover{
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+
+    /* transform: scale(1); */
+}
   .regInp{
     width: 400px;
+    margin-left: 10px;
     height: 30px;
     border-radius: 5px;
     border: 1px solid grey;
     margin-top: 8px;
   }
 .pregg{
-    margin-top: 15px;
+    margin-top: 10px;
 }
 #createAccountBtn{
     border: none;
@@ -270,18 +294,43 @@ main {
     display: flex;
     overflow: hidden;
   }
-  
+  #container{
+    margin-bottom: 10px;
+  }
   .p-card {
     box-sizing: border-box;
-    height: 10x;
-    width: 250px; /* Set your preferred card width */
+    height: 290px;
+    width: 180px; 
     margin: 0 10px;
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
   }
-  
+  .p-card:hover{
+    transform: scale(1.1);
+  }
+  #p-pagination{
+    margin-left: 35%;
+    margin-bottom: 10px;
+  }
+  .pagination-btn{
+    margin-left: 10px;
+    height: 40px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid #f1eeee;
+    font-size: 16px;
+    background-color: #dcd8d8;
+
+  }
+  .pagination-btn:hover{
+    background-color: #333;
+    color: #fff;
+    border: none;
+    /* transform: scale(1.1); */
+    box-shadow: -3px 2px 16px 3px rgba(0,0,0,0.75);
+  }
   .p-card img {
     width: 100%;
     height: 150px; /* Set your preferred image height */
@@ -306,6 +355,24 @@ main {
     outline: none;
     transition: color 0.3s ease-in-out;
   }
+  #container{
+    margin-top: 20px; 
+    margin-left: 160px;
+    /* border: 1px solid blue; */
+}
+#pbuttom{
+  /* border: 1px solid red; */
+  margin-top: 15px;
+  
+}
+#p-btm-h{
+    font-size: 40px;
+    font-style: italic;
+    margin-left: 45%;
+    text-decoration: underline;
+    /* margin-top: 20px; */
+   /* border: 1px solid black; */
+}
   
   .slider-btn-left {
     left: 10px;
