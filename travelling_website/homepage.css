@@ -16,9 +16,20 @@ main {
 }
 
 /* Top section styles */
+#container{
+    margin-top: 30px;
+    margin-left: 85px;
+}
+#p-btm-h{
+    font-size: 40px;
+    font-style: italic;
+    margin-left: 85px;
+    margin-top: 20px;
+
+}
 #ptop {
     background: url(./assets/alps-switzerland-mountains-village-lake-house.jpg) center/cover no-repeat;
-    height: 70vh;
+    height: 45vh;
     display: flex;
     flex-direction: column;
     color: #fff; 
@@ -253,3 +264,58 @@ main {
     background-color: grey;
     color: whitesmoke;
 }
+
+/* Cardd=== */
+.p-cardlist {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .p-card {
+    box-sizing: border-box;
+    height: 10x;
+    width: 250px; /* Set your preferred card width */
+    margin: 0 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .p-card img {
+    width: 100%;
+    height: 150px; /* Set your preferred image height */
+    object-fit: cover;
+  }
+  
+  .p-title, .p-address, .p-price {
+    margin: 10px;
+    color: #333;
+  }
+  
+  /* Navigation buttons */
+  .slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .slider-btn-left {
+    left: 10px;
+  }
+  
+  .slider-btn-right {
+    right: 10px;
+  }
+  
+  /* Hover effect for navigation buttons */
+  .slider-btn:hover {
+    color: #007bff;
+  }
