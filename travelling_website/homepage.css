@@ -18,13 +18,12 @@ main {
 /* Top section styles */
 
 #ptop {
-    background: url(./assets/Aussenansicht-10-scaled.webp) center/cover no-repeat;
+    background: url(https://www.fabhotels.com/blog/wp-content/uploads/2019/08/Places-to-Visit-in-June_600.jpg) center/cover no-repeat;
     height: 85vh;
     display: flex;
     flex-direction: column;
     color: #faf6f6; 
-    
-}
+  }
 
 #pnav {
     display: flex;
@@ -95,6 +94,19 @@ main {
     color: #fff;
 }
 
+/* search btns */
+.pr{
+  color: #000000;
+  height: 50px;
+  width: 100px;
+  border: 1px solid black;
+}
+
+.pr-btns{
+  height: 50px;
+  width: 300px;
+  display: flex;
+}
 /* Search area styles */
 #psearch {
     flex: 1;
@@ -106,7 +118,7 @@ main {
 
 #phead {
     font-size: 70px;
-    color:#f8f8f8;
+    color:#000000;
     margin-top: 20px;
     margin-bottom: 300px;
     font-weight: 600;
