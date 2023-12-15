@@ -65,15 +65,15 @@ let pagination=document.getElementsByClassName("a-pagination");
 
 fetchData(hotelURL, 1);
 
-async function fetchData(url, pageNo){
+async function fetchData(url, pageNo,qparams=""){
     try{
-        let res=await fetch(`${url}?_limit=8&_page=${pageNo}`);
+        let res=await fetch(`${url}?_limit=8&_page=${pageNo}${qparams}`);
         let totalPost=res.headers.get("X-Total-Count");
         let totalbtns=Math.ceil(totalPost/8);
 
         pagination.innerHTML=null;
         for(let i=1; i<=totalbtns; i++){
-            pagination[0].append(getAsButton(i));
+            pagination[0].append(getAsButton(i,qparams));
         }
 
         let data=await res.json();
@@ -156,7 +156,7 @@ function CreateCards(data){
 }
 
 
-function getAsButton(text){
+function getAsButton(text,qparams){
     let btn=document.createElement("button");
     btn.setAttribute("data-id", text);
     btn.setAttribute("class", "a-each-button");
@@ -165,7 +165,40 @@ function getAsButton(text){
     btn.addEventListener("click", (e)=>{
       container[0].innerHTML =  ""
       pagination[0].innerHTML = ""
-        fetchData(hotelURL, e.target.dataset.id);
+        fetchData(hotelURL, e.target.dataset.id,qparams);
     });
     return btn;
 }
+// Sorting and filtering 
+
+let sort = document.getElementById('h-sort-by');
+
+sort.addEventListener('click',()=>{
+  
+  if(sort.value != 'default' && sort.value == "price-low-to-high"){
+    pagination[0].innerHTML = ""
+    container[0].innerHTML = ""
+    fetchData(hotelURL,1,'&_sort=price&_order=asc');
+    
+  }
+  if(sort.value != 'default' && sort.value == "price-high-to-low"){
+    pagination[0].innerHTML = ""
+    container[0].innerHTML = ""
+    fetchData(hotelURL,1,'&_sort=price&_order=desc');
+    
+  }
+  if(sort.value != 'default' && sort.value == "rating-low-to-high"){
+    pagination[0].innerHTML = ""
+    container[0].innerHTML = ""
+    pagination[0].innerHTML = ""
+    container[0].innerHTML = ""
+    fetchData(hotelURL,1,'&_sort=rating&_order=asc');
+   
+  }
+  if(sort.value != 'default' && sort.value == "rating-high-to-low"){
+    pagination[0].innerHTML = ""
+    container[0].innerHTML = ""
+    fetchData(hotelURL,1,'&_sort=rating&_order=desc');
+  }
+
+})
