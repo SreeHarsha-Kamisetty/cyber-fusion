@@ -391,15 +391,26 @@ font-family: 'Poppins', sans-serif;
 /* Footer End */
 
 /* Card Creation   Start----> */
+.a-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
 .horizontal-card {
     display: flex;
     flex-direction: row;
-    height: 50vh;
-    margin: 1vh;
+    width: 90%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 50px;
+    gap: 15px;
+    margin-top: 30px;
+
 }
 .horizontal-card:hover{
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;}
+    transform: scale(1.01);
+}
 .card-img {
     width: 40%;
     object-fit: cover;
@@ -411,6 +422,7 @@ font-family: 'Poppins', sans-serif;
     flex-direction: column;
     padding: 3vw;
     padding-top: 3vh;
+    /* align-self: flex-end; */
 }
 .card-title{
     font-family: Arial, Helvetica, sans-serif;
@@ -456,7 +468,9 @@ font-family: 'Poppins', sans-serif;
 .a-each-button:hover{
     background-color: #0e1037;
     color: white;
-    box-shadow: 5px 5px 5px 5px #333;
+    /* box-shadow: 5px 5px 5px 5px #333; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
 }
 
  /* CSS for the book now button in the card */
@@ -467,15 +481,21 @@ font-family: 'Poppins', sans-serif;
   }
   .book-button{
     width: 20%;
-    height: 20%;
+    height: 50px;
     margin: 20px;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    color: red;
+    border: 0.5px solid red;
+    cursor: pointer;
+    font-weight: bolder;
+
 }
 .book-button:hover {
     color: white;
-    background-color: #0e1037
+    background-color: #e94c66
 }
 
 /* end of css for the book now button */
@@ -484,6 +504,7 @@ font-family: 'Poppins', sans-serif;
 #h-search-bar{
     text-align: center;
     padding: 10px;
+    
 }
 #h-submit-button{
     width: 20%;
@@ -491,8 +512,11 @@ font-family: 'Poppins', sans-serif;
     margin: 20px;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-
+    
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06);
+    border: 0.5px solid gray;
+    cursor: pointer;
+    
 }
 #h-submit-button:hover {
     color: white;
@@ -502,6 +526,7 @@ font-family: 'Poppins', sans-serif;
     width: fit-content;
     border-radius: 10px;
     padding: 10px;
+    /* border: none; */
 }
 #h-input-selection{
     border-radius: 10px;
@@ -532,14 +557,12 @@ font-family: 'Poppins', sans-serif;
 }
 #h-filter-by{
     padding: 10px;
-    
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 #h-sort-by{
     padding: 10px;
     
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
