@@ -458,4 +458,22 @@ font-family: 'Poppins', sans-serif;
     box-shadow: 5px 5px 5px 5px #333;
 }
 
+ /* CSS for the book now button in the card */
+
+ .page-item {
+    display: inline-block;
+    margin-right: 5px; /* Adjust spacing between page items */
+  }
+  .book-button{
+    width: 20%;
+    height: 20%;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.book-button:hover {
+    color: white;
+    background-color: rgb(194, 34, 60);
+}
 /* Pagination Creation   End----> */
