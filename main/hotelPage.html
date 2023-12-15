@@ -3,90 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Membership</title>
+    <title>Hotel Page</title>
+    <link rel="stylesheet" href="HotelPage_Style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="membership_Style.css">
 </head>
 <body>
-    <div class="main">
-        <header >
-            <nav id="pnav">
-                <div id="pleft">
-                    <img src="img/hotellogo.jpg" alt="logo" id="plogo">
-                    <div id="linksp"> <a href="#" class="plink">Book a Hotel</a>
-                        <a href="#" class="plink">How it works</a>
-                        <a href="#" class="plink">About Us</a>
-                        <a href="#" class="plink">Contact Us</a></div>
-                </div>
-                  
-                <div id="pright">
-                    <div><button id="pmembership">Membership</button>
-                        <button id="plogin">Log In</button></div>
-
-                    <!-- Hidden menu -->
-                    
-                </div>
-             </nav>
-        </header>
-    <div class="a-one a-container-div">
-        <h1 class="a-container-text">Become a member now</h1>
-        <div class="a-container">
-            <div class="a-each-container">
-                <div class="a-eachCard-img"><img src="img/card_1_img.jpg" alt="card-1"></div>
-                <div class="a-eachCard-text">
-                    <div>Trial membership 6 months</div>
-                    <div>CHF 79 <span class="a-container-span">/ 6 months</span> <button class="a-container-button">Buy</button></div>
-                </div>
+    <!-- Header Start-->
+    <header>
+        <main>
+            <!-- Top -->
+            <div id="ptop">
+                 <nav id="pnav">
+                    <div id="pleft">
+                        <img src="assets/newone.png" alt="logo" id="plogo">
+                        <div id="linksp"> <a href="#" class="plink">Book a Hotel</a>
+                            <a href="#" class="plink">How it works</a>
+                            <a href="#" class="plink">About Us</a>
+                            <a href="#" class="plink">Contact Us</a></div>
+                    </div>
+                      
+                    <div id="pright">
+                        <div><button id="pmembership">Membership</button>
+                            <button id="plogin">Log In</button></div>
+    
+                        <!-- Hidden menu -->
+                        
+                    </div>
+                 </nav>
             </div>
-            <div class="a-each-container">
-                <div class="a-eachCard-img"><img src="img/card_2_img.jpg" alt="card-2"></div>
-                <div class="a-eachCard-text">
-                    <div>Hotelcard</div>
-                    <div>CHF 99 <span class="a-container-span">/ 1 year</span> <button class="a-container-button">Buy</button></div>
-                </div>
-            </div>
-            <div class="a-each-container">
-                <div class="a-eachCard-img"><img src="img/card_3_img.jpg" alt="card-2"></div>
-                <div class="a-eachCard-text">
-                    <div>Gift card</div>
-                    <div>CHF 99 <span class="a-container-span">/ Valid 12 months</span><button class="a-container-button">Buy</button></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="a-one a-img-container">
-        <div class="a-img-container-radius">
-        <img class=".a-couple-img" src="img/couple_on_beach_img.jpg" alt="couple on beach">
-        <div class="background-imgText-div">
-            <h1 class="a-img-h1">Simple. <br>
-            Honest. <br>
-            Win-win for all. </h1>
+            <!-- Login Modal -->
+        <div id="loginModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeLoginModal()">&times;</span>
+          <h2 class="hplogin">Login to our HotelCard</h2>
+          <form id="loginForm">
+            <label for="email" class="lpemail">E-mail *</label> <br>
+            <input type="email" id="email" name="email" required class="pinput" placeholder="Enter Your Email"> <br> <br> <br>
+      
+            <label for="password" class="lpemail">Password *</label> 
+            <span class="show-password" onclick="togglePassword()">Show</span>
             <br>
-            <button class="a-img-button">Learn more</button>
-        </div>
-        </div>
-    </div>
-    <div class="a-one a-questions-section">
-        <div class="a-qsection">Frequently asked <br>questions</div>
-        <div class="a-list">
-            <ul>
-                <li>Is Hotelcard a subscription?</li>
-                <li>Can the membership be cancelled at any time?</li>
-                <li>When can I start using Hotelcard?</li>
-                <li>Can I book as often as I like at  member-rates?</li>
-            </ul>
-        </div>
-    </div>
-    <div class="a-anymore-questions">
-        <div class="a-ask">Do you have <br>anymore questions?</div>
-        <div class="a-contact-section">
-            <div>We would be happy to advice you by telephone or e-mail</div>
-            <div class="a-contact-details">
-                <div class="a-each-contact">+41(0)800 083 083</div>
-                <div class="a-each-contact">office@hotelcard.com</div>
+            <div class="password-container">
+              <input type="password" id="password" name="password" class="pinput" placeholder="Enter Your Password" required>
             </div>
+      
+            <button type="button" onclick="performLogin()" class="ploginbtn">Login</button><br>
+            <div class="pregg"> <span>Already logIn-</span>
+            <button id="createAccountBtn">Create new account</button>
+            </div>
+           
+          </form>
+        </div>
+        </div>
+    
+    <!-- Registrationn -->
+    <div id="registrationPage" class="hidden">
+        <span class="close" onclick="closeRegForm()">&times;</span>
+        <h2>Create an Account</h2>
+        <form id="registrationForm">
+          <label for="regName" class="reglabel">Name *</label> <br>
+          <input type="text" id="regName" name="regName" required placeholder="Enter Your Name" class="regInp"> <br> <br>
+      
+          <label for="regEmail" class="reglabel">E-mail *</label> <br>
+          <input type="email" id="regEmail" name="regEmail" required placeholder="Enter Your Email" class="regInp"> <br> <br>
+      
+          <label for="regPassword" class="reglabel">Create Password *</label> <br>
+          <input type="password" id="regPassword" name="regPassword" required placeholder="Create Your Password" class="regInp"> <br> <br>
+      
+          <label for="regMobile" class="reglabel">Mobile Number *</label> <br>
+          <input type="tel" id="regMobile" name="regMobile" required placeholder="Enter Your Mobile Number" class="regInp"> <br> <br>
+      
+          <label for="regState" class="reglabel">State *</label> <br>
+          <input type="text" id="regState" name="regState" required placeholder="Enter Your State" class="regInp"> <br> <br> 
+      
+          <label for="regPincode" class="reglabel">Pincode *</label> <br>
+          <input type="text" id="regPincode" name="regPincode" required placeholder="Enter Your Pincode" class="regInp"> <br> <br>
+      
+          <button type="button" onclick="performRegistration()" class="regloginbtn">Register</button>
+        </form>
+      </div>
+        </main>
+    </header>
+    <hr>
+    <!-- Header end -->
+
+    <!-- Start of main Section -->
+    <!-- Search bar -->
+    <div id="h-search-bar">
+        <input type="text" id="h-input" placeholder="Enter any region/country">
+        <select name="fields" id="h-input-selection">
+            <option value="">Search By</option>
+            <option value="region">Region</option>
+            <option value="country">Country</option>
+        </select>
+        <button type="submit" id="h-submit-button">Search</button>
+    </div>
+    <!-- Sort and filter sections-->
+    <div id="h-feature-container">
+        <div id="h-sorting-feature">
+            <select name="sortby" id="h-sort-by">
+                <option value="default">Sort By</option>
+                <option value="price-high-to-low">Price High to low</option>
+                <option value="price-low-to-high">Price Low to High</option>
+                <option value="rating-low-to-high">Rating Low to High</option>
+                <option value="rating-high-to-low">Rating High to Low</option>
+            </select>
+        </div>
+        <div id="h-filtering-feature">
+            <select name="filter by" id="h-filter-by">
+                <option value="default">Filter By Regions</option>
+                <option value="Basel">Basel</option>
+                <option value="Aargau">Aargau</option>
+                <option value="Zurich">Zurich</option>
+                <option value="Bern">Bern</option>
+                <option value="Haute-Savoie">Haute-Savoie</option>
+            </select>
         </div>
     </div>
+    <div class="a-main">
+        <div class="a-container">
+           <!-- Here Comes the Cards -->
+        </div>
+        <div class="a-pagination">
+            <!-- Here Comes the pagination-->
+        </div>
+    </div>
+    <!-- End of main Section -->
+
+
+    <!-- Footer Start -->
     <footer>
         <div class="shbzfooter">
             <div class="footercontainer">
@@ -175,10 +220,10 @@
                                 <option value="2">Euro</option>
                             </select>
                             <h4 class="shbzheading4">HotelCard mobile app</h4>
-                            <a href="https://apps.apple.com/ch/app/hotelcard/id1552189409"><img src="/cyber-fusion/apple.png"
+                            <a href="https://apps.apple.com/ch/app/hotelcard/id1552189409"><img src="./apple.png"
                                     alt="applestore"></a>
                             <a href="https://play.google.com/store/apps/details?id=com.hotelcard.app"><img
-                                    style="margin-top: 15px;" src="../googleplay.png" alt="googleplay"></a>
+                                    style="margin-top: 15px;" src="./googleplay.png" alt="/googleplay"></a>
                         </div>
                     </div>
                 </div>
@@ -193,6 +238,7 @@
             
         </div>
     </footer>
-    </div>
+    <!-- Footer end -->
+    <script src="HotelPage_Script.js"></script>
 </body>
 </html>
