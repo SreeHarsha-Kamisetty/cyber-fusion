@@ -8,6 +8,17 @@ let password = document.getElementById('password').value;
 let mainSection = document.getElementById("container");
 let pagination = document.getElementById("p-pagination");
 
+// Adding user input---
+let addNameInput = document.getElementById("regName");
+let addEmailInput = document.getElementById("regEmail");
+let addPassInput = document.getElementById("regPassword");
+let userCreateBtn = document.getElementById("p-reg-btnn");
+// let userRegBtn = document.getElementById("showRegistrationPage");
+let userURL = "https://apicyberfusion.onrender.com/users";
+
+let newUserp = document.getElementById("pright");
+
+
 function openLogin(){
     plogIn.style.display = 'block';
     document.body.style.overflow = 'hidden';
@@ -48,13 +59,17 @@ function showRegistrationPage() {
     document.getElementById('registrationPage').classList.add('hidden');
     document.body.style.overflow = 'hidden'; 
   }
-  document.getElementById('createAccountBtn').addEventListener('click', showRegistrationPage);
+  document.getElementById('createAccountBtn').addEventListener('click', (e)=>{
+    e.preventDefault();
+    showRegistrationPage();
+  });
   function closeRegForm(){
     pregistration.style.display = 'none';
     document.body.style.overflow = 'auto';
 }
 
 // Bottom cards----Top offers--
+
 
 let hotelURL = "https://apicyberfusion.onrender.com/hotels";
 async function fetchData(url,pageNum){
@@ -148,3 +163,32 @@ function createPaginationButton(text, pageNum) {
   });
   return pageBtn;
 }
+
+// Adding new user--
+async function createNewData(url){
+  try{
+    const newUserData={
+      email:addEmailInput.value,
+      password:addPassInput.value,
+    };
+    let res = await fetch(url,{
+      method:"POST",
+      headers:{"Content-Type":"application/json"},
+      body:JSON.stringify(newUserData),
+    });
+    const updateData = await res.json();
+    fetchData(userURL);
+  }catch(error){
+    console.log(error);
+  }
+}
+userCreateBtn.addEventListener("click",(e)=>{
+  e.preventDefault();
+  createNewData(userURL);
+  alert("Login Successfully....!")
+  const userNamep = addNameInput.value;
+  closeRegForm();
+  newUserp.innerHTML = `<div><a href="./membershipPage.html"><button id="pmembership">Membership</button></a> 
+  <button id="plogin">${userNamep}</button></div>
+`
+})
