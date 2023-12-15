@@ -175,6 +175,7 @@ let sort = document.getElementById('h-sort-by');
 
 sort.addEventListener('click',()=>{
   
+  
   if(sort.value != 'default' && sort.value == "price-low-to-high"){
     pagination[0].innerHTML = ""
     container[0].innerHTML = ""
@@ -202,3 +203,43 @@ sort.addEventListener('click',()=>{
   }
 
 })
+let filter = document.getElementById('h-filter-by');
+
+filter.addEventListener('click',()=>{
+  
+  // if(filter.value != 'default' && filter.value == "Basel"){
+  //   pagination[0].innerHTML = ""
+  //   container[0].innerHTML = ""
+  //   fetchData(hotelURL,1,'&region_like=Basel');
+    
+  // }
+  // if(filter.value != 'default' && filter.value == "Aargau"){
+  //   pagination[0].innerHTML = ""
+  //   container[0].innerHTML = ""
+  //   fetchData(hotelURL,1,'&region_like=Aargau');
+    
+  // }
+  // if(filter.value != 'default' && filter.value == "Zurich"){
+  //   pagination[0].innerHTML = ""
+  //   container[0].innerHTML = ""
+  //   fetchData(hotelURL,1,'&region_like=Zurich');
+   
+  // }
+  // if(filter.value != 'default' && filter.value == "Styria"){
+  //   pagination[0].innerHTML = ""
+  //   container[0].innerHTML = ""
+  //   fetchData(hotelURL,1,'&region_like=Styria');
+  // }
+  // if(filter.value != 'default' && filter.value == "Carintha"){
+  //   pagination[0].innerHTML = ""
+  //   container[0].innerHTML = ""
+  //   fetchData(hotelURL,1,'&region_like=Carintha');
+  // }
+  if(filter.value != 'default'){
+    pagination[0].innerHTML = ""
+    container[0].innerHTML = ""
+    fetchData(hotelURL,1,`&region_like=${filter.value}`);
+  }
+
+})
+let search_input = document.getElementById('h-input-selection');
