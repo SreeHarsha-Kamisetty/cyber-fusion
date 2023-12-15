@@ -121,7 +121,7 @@ function createBtn(number) {
   const startPage = Math.max(1, currentPage - Math.floor(maxButtonsToShow / 2));
   const endPage = Math.min(number, startPage + maxButtonsToShow - 1);
 
-  if (currentPage > 1) {
+  if (currentPage > 0) {
     const prevBtn = createPaginationButton('Prev', currentPage - 1);
     pagination.appendChild(prevBtn);
   }
