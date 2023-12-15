@@ -4,6 +4,7 @@
       "id": 1,
       "email": "harsha@gmail.com",
       "password": "password",
+      "username":"username",
       "bookings" :[
         {
           "name": "Seedamm Plaza",
@@ -122,6 +123,7 @@
       "id": 2,
       "email": "anjali@gmail.com",
       "password": "password",
+      "username":"username",
       "bookings":[
         {
           "id": 56,
@@ -338,6 +340,7 @@
       "id":3,
       "email":"prity@gmail.com",
       "password":"password",
+      "username":"username",
       "bookings":[{
         "id": 72,
         "name": "B&B Hotel Oftringen",
@@ -466,6 +469,7 @@
       "id":4,
       "email":"shahbaz@gmail.com",
       "password":"password",
+      "username":"username",
       "bookings":[
         {
           "id": 1,
@@ -616,6 +620,7 @@
       "id":5,
       "email":"rohan@gmail.com",
       "password":"password",
+      "username":"username",
       "bookings":[ {
         "id": 39,
         "name": "Hotel Meilenstein",
