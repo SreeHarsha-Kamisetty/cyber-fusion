@@ -8,10 +8,12 @@ server.use(bodyParser.json());
 
 //LOGIN
 server.post('/login',(req,res)=>{
-    const {username,password} = req.body;
+    const {email,password} = req.body;
 
-    const user = router.db.get('users').find({username}).value();
-
+    const user = router.db.get('users').find({email}).value();
+    if(!user){
+        return res.status(500).json("Invalid User")
+    }
     if(password === user.password){
         const token = "Valid User"
         res.json({token})
@@ -23,9 +25,9 @@ server.post('/login',(req,res)=>{
 
 // Register
 server.post('/register',(req,res) =>{
-    const {username,password} = req.body;
+    const {email,password} = req.body;
 
-    const existingUser = router.db.get('users').find({username}).value();
+    const existingUser = router.db.get('users').find({email}).value();
     if(existingUser){
         return res.status(400).json({message: 'User exists'});
     }
@@ -33,22 +35,22 @@ server.post('/register',(req,res) =>{
     const newUserId = lastUserId +1;
     const newUser = {
         id:newUserId,
-        username,password
+        email,password
     }
     router.db.get('users').push(newUser).write();
     res.json({message: 'User Registered'});
 })
-server.post('/hotels',(req,res) =>{
-    const {name,address,price,discount,rating,image,region,country} = req.body;
-    const hotelId = router.db.get('hotels').value().reduce((maxId,hotel) =>Math.max(maxId,hotel.id),0);
-    const newhotelId = hotelId +1;
-    const newhotel = {
-        id:newhotelId,
-        name,address,price,discount,rating,image,region,country
-    }
-    router.db.get('hotels').push(newhotel).write();
-    res.json({newhotel});
-})
+// server.post('/hotels',(req,res) =>{
+//     const {name,address,price,discount,rating,image,region,country} = req.body;
+//     const hotelId = router.db.get('hotels').value().reduce((maxId,hotel) =>Math.max(maxId,hotel.id),0);
+//     const newhotelId = hotelId +1;
+//     const newhotel = {
+//         id:newhotelId,
+//         name,address,price,discount,rating,image,region,country
+//     }
+//     router.db.get('hotels').push(newhotel).write();
+//     res.json({newhotel});
+// })
 server.use(middlewares)
 server.use(router)
 const PORT = 3000;

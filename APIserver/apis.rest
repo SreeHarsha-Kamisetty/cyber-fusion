@@ -24,4 +24,7 @@ Content-Type: application/json
         "country": "France"
       }
 ### 
-GET http://localhost:3000/hotels
+GET https://apicyberfusion.onrender.com/hotels?region_like=Carintha
+Content-Type: application/json
+
+

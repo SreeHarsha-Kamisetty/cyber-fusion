@@ -1,7 +1,7 @@
 /* *{
     box-sizing:border-box;
     margin: 0px;
-    padding: 0px;
+    padding: 4px;
     list-style: none;
     text-decoration: none;
     transition: all 0.3s;
@@ -11,8 +11,8 @@
 /* Header Start*/
 main {
     display: flex;
+    height: 12vh;
     flex-direction: column;
-    height: 100vh;
 }
 
 #ptop {
@@ -389,3 +389,157 @@ font-family: 'Plus Jakarta Sans', sans-serif;
 font-family: 'Poppins', sans-serif;
 }
 /* Footer End */
+
+/* Card Creation   Start----> */
+.horizontal-card {
+    display: flex;
+    flex-direction: row;
+    height: 50vh;
+    margin: 1vh;
+    border-radius: 50px;
+}
+.horizontal-card:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;}
+.card-img {
+    width: 40%;
+    object-fit: cover;
+    padding: 3vh;
+}
+.card-details {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 3vw;
+    padding-top: 3vh;
+}
+.card-title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.3vw;
+}
+.card-text{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0.3%;
+    padding:0.5vh;
+    letter-spacing: 0.1vw;
+    word-spacing: 0.1vw;
+}
+.bg-danger{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 750;
+    background-color: #ed0b0b;
+    color: white;
+    padding: 1vh;
+    letter-spacing: 0.1vw;
+    border: none;
+    border-radius: 10%;
+    box-shadow:3px 3px 3px 3px pink;
+}
+/* Card Creation     End----> */
+
+/* Pagination Creation   Start----> */
+.a-pagination{
+    align-items:baseline center;
+    text-align: center;
+    margin: 5vh;
+    height: 8vh;
+}
+.a-each-button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    width: 4vw;
+    height: 100%;
+    border-radius: 20%;
+}
+.a-each-button:hover{
+    background-color: #0e1037;
+    color: white;
+    box-shadow: 5px 5px 5px 5px #333;
+}
+
+ /* CSS for the book now button in the card */
+
+ .page-item {
+    display: inline-block;
+    margin-right: 5px; /* Adjust spacing between page items */
+  }
+  .book-button{
+    width: 20%;
+    height: 20%;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.book-button:hover {
+    color: white;
+    background-color: #0e1037
+}
+
+/* end of css for the book now button */
+/* Pagination Creation   End----> */
+/* Search bar */
+#h-search-bar{
+    text-align: center;
+    padding: 10px;
+}
+#h-submit-button{
+    width: 20%;
+    height: 20%;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+#h-submit-button:hover {
+    color: white;
+    background-color: #0e1037
+}
+#h-input{
+    width: fit-content;
+    border-radius: 10px;
+    padding: 10px;
+}
+#h-input-selection{
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+/* end of search bar */
+
+/* sorting and filter */
+/* sorting feature */
+#h-sorting-feature{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    margin: 10px;
+}
+#h-filtering-feature{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    margin: 10px;
+}
+#h-feature-container{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    margin: 10px;
+}
+#h-filter-by{
+    padding: 10px;
+    
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#h-sort-by{
+    padding: 10px;
+    
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
