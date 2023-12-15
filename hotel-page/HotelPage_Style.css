@@ -453,7 +453,7 @@ font-family: 'Poppins', sans-serif;
     border-radius: 20%;
 }
 .a-each-button:hover{
-    background-color: rgb(110, 110, 235);
+    background-color: #0e1037;
     color: white;
     box-shadow: 5px 5px 5px 5px #333;
 }
@@ -474,6 +474,8 @@ font-family: 'Poppins', sans-serif;
 }
 .book-button:hover {
     color: white;
-    background-color: rgb(194, 34, 60);
+    background-color: #0e1037
 }
+
+/* end of css for the book now button */
 /* Pagination Creation   End----> */

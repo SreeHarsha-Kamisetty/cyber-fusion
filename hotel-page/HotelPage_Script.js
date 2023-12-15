@@ -118,12 +118,13 @@ function CreateCards(data){
         let p2=document.createElement("p");
         p2.setAttribute("class", "card-text");
         let s=document.createElement("s");
-        s.textContent=`Original Price: ${element.price*2}`;
+        s.textContent=`Original Price: CHF ${element.price*2}`;
         p2.appendChild(s);
 
         let p3=document.createElement("p");
         p3.setAttribute("class", "card-text");
-        p3.textContent=`Book now for: ${element.price}`;
+        p3.textContent=`Book now for: CHF ${element.price}`;
+        
 
         let p4=document.createElement("p");
         p4.setAttribute("class", "card-text");
