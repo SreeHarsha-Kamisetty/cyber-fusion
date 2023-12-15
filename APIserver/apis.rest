@@ -24,4 +24,7 @@ Content-Type: application/json
         "country": "France"
       }
 ### 
-GET http://localhost:3000/hotels
+GET http://localhost:3000/users/4
+Content-Type: application/json
+
+
