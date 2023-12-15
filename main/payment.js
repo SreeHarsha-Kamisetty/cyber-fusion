@@ -40,3 +40,33 @@ function toggleDivVisibility(btnId) {
     divToToggle.style.display = "none";
   }
 }
+
+function validateDeliveryForm() {
+  // Get the values of the input fields
+  var emailValue = document.getElementById("formGroupExampleInput").value;
+  var firstNameValue = document.getElementById("firstName").value;
+  var lastNameValue = document.getElementById("lastName").value;
+  var countyValue = document.getElementById("exampleSelect").value;
+  var addressValue = document.getElementById("formGroupExampleInput1").value;
+  var cardValue = document.getElementById("rCard").value;
+  var cvvValue = document.getElementById("rcvv").value;
+  var phoneValue = document.getElementById("Phone").value;
+  var dobValue = document.getElementById("d-o-b").value;
+
+  // Checking if any of the required fields are empty
+  if (
+    emailValue === "" ||
+    firstNameValue === "" ||
+    lastNameValue === "" ||
+    countyValue === "Choose a county" ||
+    addressValue === "" ||
+    cardValue === "" ||
+    cvvValue === "" ||
+    phoneValue === "" ||
+    dobValue === ""
+  ) {
+    alert("All fields are mandatory. Please fill in all required fields.");
+  } else {
+    alert("Form submitted successfully!");
+  }
+}
