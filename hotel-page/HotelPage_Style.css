@@ -480,3 +480,66 @@ font-family: 'Poppins', sans-serif;
 
 /* end of css for the book now button */
 /* Pagination Creation   End----> */
+/* Search bar */
+#h-search-bar{
+    text-align: center;
+    padding: 10px;
+}
+#h-submit-button{
+    width: 20%;
+    height: 20%;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+#h-submit-button:hover {
+    color: white;
+    background-color: #0e1037
+}
+#h-input{
+    width: fit-content;
+    border-radius: 10px;
+    padding: 10px;
+}
+#h-input-selection{
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+/* end of search bar */
+
+/* sorting and filter */
+/* sorting feature */
+#h-sorting-feature{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    margin: 10px;
+}
+#h-filtering-feature{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    margin: 10px;
+}
+#h-feature-container{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    margin: 10px;
+}
+#h-filter-by{
+    padding: 10px;
+    
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#h-sort-by{
+    padding: 10px;
+    
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
