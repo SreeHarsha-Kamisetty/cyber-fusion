@@ -95,7 +95,7 @@ function CreateCards(data){
         let image=document.createElement("img");
         image.setAttribute("class", "card-img");
         image.alt="Card Image";
-        image.src=`.cyber-fusion/APIserver/${element.images}`;
+        image.src=`../APIserver/${element.image}`;
 
         let cardDetails=document.createElement("div");
         cardDetails.setAttribute("class", "card-details");
@@ -136,8 +136,12 @@ function CreateCards(data){
         let h3=document.createElement("h3");
         h3.setAttribute("class", "card-text");
         h3.textContent=`Country: ${element.country}`;
+        let book = document.createElement('button');
+        book.className = "page-item"
+        book.setAttribute('class','book-button');
+        book.innerText = "Book Now"
 
-        cardDetails.append(h1, small, p1, p2, p3, p4, h4, h3);
+        cardDetails.append(h1, small, p1, p2, p3, p4, h4, h3,book);
 
         let hr1=document.createElement("hr");
 
@@ -157,6 +161,8 @@ function getAsButton(text){
     btn.textContent=text;
 
     btn.addEventListener("click", (e)=>{
+      container[0].innerHTML =  ""
+      pagination[0].innerHTML = ""
         fetchData(hotelURL, e.target.dataset.id);
     });
     return btn;
