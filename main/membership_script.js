@@ -1,14 +1,48 @@
-let a=document.getElementById("a");
-let aa=document.getElementsById("aa");
-a.addEventListener("click", ()=>{
-    if (aa.style.visibility === 'hidden') {
-        aa.style.visibility = 'visible';
-      } else {
-        aa.style.visibility = 'hidden';
-      }
-});
 
+function visiblea(){
+    var x = document.getElementById("aa");
+    var y=document.getElementById("a");
+  if (x.style.visibility === 'hidden') {
+    x.style.visibility = 'visible';
+    y.style.fontWeight=1000;
+  } else {
+    x.style.visibility = 'hidden';
+    y.style.fontWeight=500;
+  }
+}
 
-let b=document.getElementById("b");
-let c=document.getElementById("c");
-let d=document.getElementById("d");
+function visibleb(){
+    var x = document.getElementById("bb");
+    var y=document.getElementById("b");
+  if (x.style.visibility === 'hidden') {
+    x.style.visibility = 'visible';
+    y.style.fontWeight=1000;
+  } else {
+    x.style.visibility = 'hidden';
+    y.style.fontWeight=500;
+  }
+}
+
+function visiblec(){
+    var x = document.getElementById("cc");
+    var y=document.getElementById("c");
+  if (x.style.visibility === 'hidden') {
+    x.style.visibility = 'visible';
+    y.style.fontWeight=1000;
+  } else {
+    x.style.visibility = 'hidden';
+    y.style.fontWeight=500;
+  }
+}
+
+function visibled(){
+    var x = document.getElementById("dd");
+    var y=document.getElementById("d");
+  if (x.style.visibility === 'hidden') {
+    x.style.visibility = 'visible';
+    y.style.fontWeight=1000;
+  } else {
+    x.style.visibility = 'hidden';
+    y.style.fontWeight=500;
+  }
+}
