@@ -138,6 +138,11 @@ function CreateCards(data) {
     book.className = "page-item";
     book.setAttribute("class", "book-button");
     book.innerText = "Book Now";
+    book.addEventListener('click',()=>{
+      hotelid = element.id;
+      localStorage.setItem('hotelid',hotelid);
+      window.location.href = 'payment.html';
+   })
 
     cardDetails.append(h1, small, p1, p2, p3, p4, h4, h3, book);
 
