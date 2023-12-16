@@ -16,7 +16,7 @@ server.post('/login',(req,res)=>{
     }
     if(password === user.password){
         const token = "Valid User"
-        res.json({token})
+        res.json({user})
     }
     else{
         return res.status(401).json({message:'Invalid credentials'})
