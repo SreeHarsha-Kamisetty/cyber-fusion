@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="payment.css" />
+    <link rel="stylesheet" href="HotelPage_Style.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -23,160 +24,166 @@
       <a href="#">Home</a><span>/</span><a href="#">Buy HotelCard</a
       ><span>/</span><a href="#" style="color: red">HotelCard membership</a>
     </header> -->
-    <div class="rHeading">
-      <h1>Become a member now and start saving</h1>
-    </div>
-    <div class="rContainner1">
-      <div class="rC1inner">
-        <div class="rCard">
-          <div class="rImgDiv">
-            <img
-              src="https://hotelcard-files.ams3.cdn.digitaloceanspaces.com/media/cardimgs/Trial_Hotelcard_Flat_2022.jpg"
-              alt="hotel"
-            />
+    <div id="main-container">  <!-- This is for the container to dissapear when trying to book a room-->
+      <div class="rHeading">
+        <h1>Become a member now and start saving</h1>
+      </div>
+      <div class="rContainner1">
+        <div class="rC1inner">
+          <div class="rCard">
+            <div class="rImgDiv">
+              <img
+                src="https://hotelcard-files.ams3.cdn.digitaloceanspaces.com/media/cardimgs/Trial_Hotelcard_Flat_2022.jpg"
+                alt="hotel"
+              />
+            </div>
+            <h3>Trial membership 6 months</h3>
+            <div class="rPdiv">
+              <p>
+                <i class="fa-solid fa-check"></i>Stay at over 500 hotels with up
+                to 50% member discount
+              </p>
+              <p>
+                <i class="fa-solid fa-check"></i>Start saving from the very first
+                overnight stay
+              </p>
+              <p>
+                <i class="fa-solid fa-check"></i>Book as often as you like. Only 1
+                card needed per room
+              </p>
+              <p>
+                <i class="fa-solid fa-check"></i>Membership will auto-renew 14
+                days before expiry
+              </p>
+            </div>
+            <div class="rBtnDiv">
+              <button class="rBtn">Order Now</button>
+            </div>
           </div>
-          <h3>Trial membership 6 months</h3>
-          <div class="rPdiv">
-            <p>
-              <i class="fa-solid fa-check"></i>Stay at over 500 hotels with up
-              to 50% member discount
-            </p>
-            <p>
-              <i class="fa-solid fa-check"></i>Start saving from the very first
-              overnight stay
-            </p>
-            <p>
-              <i class="fa-solid fa-check"></i>Book as often as you like. Only 1
-              card needed per room
-            </p>
-            <p>
-              <i class="fa-solid fa-check"></i>Membership will auto-renew 14
-              days before expiry
-            </p>
+          <div class="rCard">
+            <div class="rImgDiv">
+              <img
+                src="https://hotelcard-files.ams3.cdn.digitaloceanspaces.com/media/cardimgs/Member_Gift_card_2022.jpg"
+                alt="hotel"
+              />
+            </div>
+            <h3>HotelCard</h3>
+            <div class="rPdiv">
+              <p>
+                <i class="fa-solid fa-check"></i>Stay at over 500 hotels with up
+                to 50% member discount
+              </p>
+              <p>
+                <i class="fa-solid fa-check"></i>Start saving from the very first
+                overnight stay
+              </p>
+              <p>
+                <i class="fa-solid fa-check"></i>Book as often as you like. Only 1
+                card needed per room
+              </p>
+              <p>
+                <i class="fa-solid fa-check"></i>Membership will auto-renew 14
+                days before expiry
+              </p>
+            </div>
+            <div class="rBtnDiv">
+              <button class="rBtn">Order Now</button>
+            </div>
           </div>
-          <div class="rBtnDiv">
-            <button class="rBtn">Order Now</button>
+          <div class="rCard">
+            <div class="rImgDiv">
+              <img
+                src="https://hotelcard-files.ams3.cdn.digitaloceanspaces.com/media/cardimgs/Member_Gift_card_2022.jpg"
+                alt="hotel"
+              />
+            </div>
+            <h3>Gift card</h3>
+            <div class="rPdiv">
+              <p>
+                <i class="fa-solid fa-check"></i>Stay at over 500 hotels with up
+                to 50% member discount
+              </p>
+              <p>
+                <i class="fa-solid fa-check"></i>Start saving from the very first
+                overnight stay
+              </p>
+              <p>
+                <i class="fa-solid fa-check"></i>Book as often as you like. Only 1
+                card needed per room
+              </p>
+              <p>
+                <i class="fa-solid fa-check"></i>Membership will auto-renew 14
+                days before expiry
+              </p>
+            </div>
+            <div class="rBtnDiv">
+              <button class="rBtn">Order Now</button>
+            </div>
           </div>
         </div>
-        <div class="rCard">
-          <div class="rImgDiv">
-            <img
-              src="https://hotelcard-files.ams3.cdn.digitaloceanspaces.com/media/cardimgs/Member_Gift_card_2022.jpg"
-              alt="hotel"
-            />
+      </div>
+      <!-- <div class="rptaDiv"><p>Please try again!</p></div> -->
+      <div class="hotelcard-checkbox">
+        <div class="hotelcard-innerDiv">
+          <div class="rCard2">
+            <div>
+              <input type="checkbox" id="rcheckbox-2" />
+              <label for="rcheckbox-2" id="rcheckbox-2-text">Your HotelCard for 1 year:</label>
+            </div>
+            <div><p class="chf" id="rcheckbox-2-price">99 CHF</p></div>
           </div>
-          <h3>HotelCard</h3>
-          <div class="rPdiv">
-            <p>
-              <i class="fa-solid fa-check"></i>Stay at over 500 hotels with up
-              to 50% member discount
-            </p>
-            <p>
-              <i class="fa-solid fa-check"></i>Start saving from the very first
-              overnight stay
-            </p>
-            <p>
-              <i class="fa-solid fa-check"></i>Book as often as you like. Only 1
-              card needed per room
-            </p>
-            <p>
-              <i class="fa-solid fa-check"></i>Membership will auto-renew 14
-              days before expiry
-            </p>
+          <div class="rCard2">
+            <div>
+              <input type="checkbox" id="rcheckbox-3" />
+              <label for="rcheckbox-3" id="rcheckbox-3-text">Your HotelCard for 2 year:</label>
+            </div>
+            <div>
+              <p class="chf" id="rcheckbox-3-price">199 CHF</p>
+            </div>
           </div>
-          <div class="rBtnDiv">
-            <button class="rBtn">Order Now</button>
+          <div class="rCard2">
+            <div>
+              <input type="checkbox" id="rcheckbox-4" />
+              <label for="rcheckbox-4" id="rcheckbox-4-text">Your HotelCard for 3 year:</label>
+            </div>
+            <div>
+              <p class="chf" id="rcheckbox-4-price">399 CHF</p>
+            </div>
           </div>
         </div>
-        <div class="rCard">
-          <div class="rImgDiv">
-            <img
-              src="https://hotelcard-files.ams3.cdn.digitaloceanspaces.com/media/cardimgs/Member_Gift_card_2022.jpg"
-              alt="hotel"
-            />
+      </div>
+      <div class="container2">
+        <!-- <div class="dateDiv">
+          <input type="date" id="datepicker" name="datepicker" />
+  
+        </div> -->
+        <h2>Choose delivery</h2>
+        <div class="rcheckboxDiv">
+          <div class="rcheckbox">
+            <input type="checkbox" id="custom-checkbox" />
+            <label
+              for="custom-checkbox"
+              id="custom-checkbox-label"
+              required="must be field"
+              >Digital Card</label
+            >
           </div>
-          <h3>Gift card</h3>
-          <div class="rPdiv">
-            <p>
-              <i class="fa-solid fa-check"></i>Stay at over 500 hotels with up
-              to 50% member discount
-            </p>
-            <p>
-              <i class="fa-solid fa-check"></i>Start saving from the very first
-              overnight stay
-            </p>
-            <p>
-              <i class="fa-solid fa-check"></i>Book as often as you like. Only 1
-              card needed per room
-            </p>
-            <p>
-              <i class="fa-solid fa-check"></i>Membership will auto-renew 14
-              days before expiry
-            </p>
-          </div>
-          <div class="rBtnDiv">
-            <button class="rBtn">Order Now</button>
+          <div class="rcheckbox">
+            <input type="checkbox" id="custom-checkbox1" />
+            <label
+              for="custom-checkbox1"
+              id="custom-checkbox-label1"
+              required="must be field"
+              >Physical Hotel Card</label
+            >
           </div>
         </div>
       </div>
     </div>
-    <!-- <div class="rptaDiv"><p>Please try again!</p></div> -->
-    <div class="hotelcard-checkbox">
-      <div class="hotelcard-innerDiv">
-        <div class="rCard2">
-          <div>
-            <input type="checkbox" id="rcheckbox-2" />
-            <label for="rcheckbox-2" id="rcheckbox-2-text">Your HotelCard for 1 year:</label>
-          </div>
-          <div><p class="chf" id="rcheckbox-2-price">99 CHF</p></div>
-        </div>
-        <div class="rCard2">
-          <div>
-            <input type="checkbox" id="rcheckbox-3" />
-            <label for="rcheckbox-3" id="rcheckbox-3-text">Your HotelCard for 2 year:</label>
-          </div>
-          <div>
-            <p class="chf" id="rcheckbox-3-price">199 CHF</p>
-          </div>
-        </div>
-        <div class="rCard2">
-          <div>
-            <input type="checkbox" id="rcheckbox-4" />
-            <label for="rcheckbox-4" id="rcheckbox-4-text">Your HotelCard for 3 year:</label>
-          </div>
-          <div>
-            <p class="chf" id="rcheckbox-4-price">399 CHF</p>
-          </div>
-        </div>
-      </div>
+    <div class="a-container"> <!-- This container is for the hotel data to appear-->
+      <!-- Here Comes the Cards -->
     </div>
-    <div class="container2">
-      <!-- <div class="dateDiv">
-        <input type="date" id="datepicker" name="datepicker" />
-
-      </div> -->
-      <h2>Choose delivery</h2>
-      <div class="rcheckboxDiv">
-        <div class="rcheckbox">
-          <input type="checkbox" id="custom-checkbox" />
-          <label
-            for="custom-checkbox"
-            id="custom-checkbox-label"
-            required="must be field"
-            >Digital Card</label
-          >
-        </div>
-        <div class="rcheckbox">
-          <input type="checkbox" id="custom-checkbox1" />
-          <label
-            for="custom-checkbox1"
-            id="custom-checkbox-label1"
-            required="must be field"
-            >Physical Hotel Card</label
-          >
-        </div>
-      </div>
-    </div>
+  
 
     <!-- form -->
 
