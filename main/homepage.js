@@ -7,6 +7,7 @@ let peamail = document.getElementById('email').value;
 let password = document.getElementById('password').value; 
 let mainSection = document.getElementById("container");
 let pagination = document.getElementById("p-pagination");
+let signout = document.getElementById("signout");
 
 // Adding user input---
 let addNameInput = document.getElementById("regName");
@@ -194,35 +195,26 @@ userCreateBtn.addEventListener("click",(e)=>{
   const userNamep = addNameInput.value;
   closeRegForm();
   newUserp.innerHTML = `<div><span id="user-image-pr" class="usericonn">Hi, ${userNamep}</span></div>
-`
+`;
+  signout.style.display = 'block';
 })
 
 
-// Login--
-async function loginData(url){
+async function loginData(){
   try{
-    const newLoginData={
-
-      email:addUsernameLogin.value,
-      password:addPassLogin.value,
-      
-      
-    };
-    let res = await fetch(url,{
-      method:"POST",
-    });
-    if(res.ok){
-      alert("Login Successfully....!")
-      const userNamep = newLoginData.username;
-       closeRegForm();
-       newUserp.innerHTML = `<div><span id="user-image-pr" class="usericonn">Hi, ${userNamep}</span></div>
-       `;
-    }else{
-      alert("Invalid Email");
-    }
+   let res = await fetch("https://apicyberfusion.onrender.com/users/1")
+   let data = await res.json();
     
+      console.log(data);
+      console.log(data.email,data.username,data.password);
+      if(addUsernameLogin.value ==  data.email && addPassLogin.value == data.password){
+        alert("login successfull..");
+        newUserp.innerHTML = `<div><span id="user-image-pr" class="usericonn">Hi, ${data.username}</span></div>`;
+      }else{
+        alert("Invalid username and password")
+      }
   }catch(error){
-    console.log(error);
+
   }
 }
 loginBtn.addEventListener("click",(e)=>{

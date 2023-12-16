@@ -7,7 +7,9 @@
     transition: all 0.3s;
 } */
 
-
+body {
+    font-family: 'Arial', sans-serif;
+}
 /* Header Start*/
 main {
     display: flex;
