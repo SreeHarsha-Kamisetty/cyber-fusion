@@ -229,4 +229,14 @@ filter.addEventListener("click", () => {
     fetchData(hotelURL, 1, `&region_like=${filter.value}`);
   }
 });
+// Search functionality
 let search_input = document.getElementById("h-input-selection");
+let search_button =document.getElementById("h-submit-button");
+let search_text = document.getElementById('h-input');
+search_button.addEventListener('click',()=>{
+  if(search_input.value != "default"){
+    pagination[0].innerHTML = ""
+    container[0].innerHTML = ""
+    fetchData(hotelURL,1,`&${search_input.value}_like=${search_text.value}`)
+  }
+})

@@ -65,8 +65,8 @@ function validateDeliveryForm() {
     phoneValue === "" ||
     dobValue === ""
   ) {
-    alert("All fields are mandatory. Please fill in all required fields.");
+    alert("All * fields are mandatory. Please fill in all required fields.");
   } else {
-    alert("Form submitted successfully!");
+    alert("Payment  successful!");
   }
 }
