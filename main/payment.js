@@ -70,3 +70,53 @@ function validateDeliveryForm() {
     alert("Payment  successful!");
   }
 }
+
+// Script for the payment section
+let payment_desc = document.getElementById('payment-desc');
+let payment_price = document.getElementById('payment-price');
+console.log(payment_desc.innerText)
+console.log(payment_price.innerText)
+
+// checking which hotel card is checked
+let total_price = document.getElementById('total-price');
+let checkbox_2 = document.getElementById('rcheckbox-2');
+let checkbox_2_text = document.getElementById('rcheckbox-2-text');
+let checkbox_2_price = document.getElementById('rcheckbox-2-price');
+checkbox_2.addEventListener('click',()=>{
+  console.log(checkbox_2.checked)
+  if(checkbox_2.checked){
+    checkbox_3.checked = false;
+    checkbox_4.checked = false;
+    payment_desc.innerText = checkbox_2_text.innerText;
+    payment_price.innerText = checkbox_2_price.innerText;
+    total_price.innerText = checkbox_2_price.innerText;
+  }
+})
+
+let checkbox_3 = document.getElementById('rcheckbox-3');
+let checkbox_3_text = document.getElementById('rcheckbox-3-text');
+let checkbox_3_price = document.getElementById('rcheckbox-3-price');
+checkbox_3.addEventListener('click',()=>{
+  console.log(checkbox_3.checked)
+  if(checkbox_3.checked){
+    checkbox_2.checked = false
+    checkbox_4.checked = false
+    payment_desc.innerText = checkbox_3_text.innerText;
+    payment_price.innerText = checkbox_3_price.innerText;
+    total_price.innerText = checkbox_3_price.innerText;
+  }
+})
+
+let checkbox_4 = document.getElementById('rcheckbox-4');
+let checkbox_4_text = document.getElementById('rcheckbox-4-text');
+let checkbox_4_price = document.getElementById('rcheckbox-4-price');
+checkbox_4.addEventListener('click',()=>{
+  console.log(checkbox_4.checked)
+  if(checkbox_4.checked){
+    checkbox_2.checked = false;
+    checkbox_3.checked = false;
+    payment_desc.innerText = checkbox_4_text.innerText;
+    payment_price.innerText = checkbox_4_price.innerText;
+    total_price.innerText = checkbox_4_price.innerText;
+  }
+})
