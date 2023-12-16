@@ -317,19 +317,26 @@ main {
     font-size:2vh;
     align-items: baseline;
 }
-.a-card-buy{
+
+.a-card-nextline>a{
     width: 30%;
+}
+.a-card-buy{
+    width: 100%;
+    height: 100%;
     padding: 1vh;
     font-size:2vh;
     border: none;
     background-color: rgb(194, 189, 189);
     border-radius: 20px;
 }
+
 .a-card-buy:hover{
     box-shadow: rgb(38, 57, 77) 0px 15px 20px -10px;
     color: white;
     background-color: #ed0b0b;
 }
+
 
 
 /* Membership cards ends here ------> */
@@ -357,6 +364,7 @@ main {
     background-image: url(img/card_img_1.jpg);
     border-radius: 0px 20px 20px 0px ;
 }
+
 .a-CoupleText{
     padding-left: 2vw;
     margin-top: 20vh;
@@ -365,10 +373,14 @@ main {
     text-align: start;
     color: white;
 }
-.a-CoupleButton{
+
+.a-couple-text>a{
     margin-left: 2vw;
-    margin-right: 12vw;
-    padding: 1.9vh;
+    margin-right: 13vw;
+}
+.a-CoupleButton{
+    width: 100%;
+    padding: 2vh;
     border-radius: 20px;
     color: white;
     background-color: #cf1818;
