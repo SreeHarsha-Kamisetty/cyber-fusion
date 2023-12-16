@@ -24,7 +24,12 @@ Content-Type: application/json
         "country": "France"
       }
 ### 
-GET https://apicyberfusion.onrender.com/hotels?region_like=Carintha
+POST https://apicyberfusion.onrender.com/login
 Content-Type: application/json
+ 
+ {
+  "email": "harsha@gmail.com",
+      "password": "password"
+      }
 
 
