@@ -27,4 +27,11 @@ Content-Type: application/json
 GET https://apicyberfusion.onrender.com/hotels?region_like=Carintha
 Content-Type: application/json
 
+###
+POST http://localhost:3000/login
+Content-Type: application/json
 
+{
+  "email": "prity@gmail.com",
+    "password": "password"
+}

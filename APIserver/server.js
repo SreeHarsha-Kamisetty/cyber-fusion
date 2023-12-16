@@ -8,7 +8,7 @@ server.use(bodyParser.json());
 
 //LOGIN
 server.post('/login',(req,res)=>{
-    const {email,password} = req.body;
+    const {email,password,username} = req.body;
 
     const user = router.db.get('users').find({email}).value();
     if(!user){
@@ -16,7 +16,7 @@ server.post('/login',(req,res)=>{
     }
     if(password === user.password){
         const token = "Valid User"
-        res.json({token})
+        res.status(200).json({user})
     }
     else{
         return res.status(401).json({message:'Invalid credentials'})
@@ -25,7 +25,7 @@ server.post('/login',(req,res)=>{
 
 // Register
 server.post('/register',(req,res) =>{
-    const {email,password} = req.body;
+    const {email,password,username} = req.body;
 
     const existingUser = router.db.get('users').find({email}).value();
     if(existingUser){
@@ -35,7 +35,7 @@ server.post('/register',(req,res) =>{
     const newUserId = lastUserId +1;
     const newUser = {
         id:newUserId,
-        email,password
+        email,password,username
     }
     router.db.get('users').push(newUser).write();
     res.json({message: 'User Registered'});
