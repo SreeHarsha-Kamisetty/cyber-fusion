@@ -24,7 +24,19 @@ Content-Type: application/json
         "country": "France"
       }
 ### 
-GET http://localhost:3000/users/4
+POST https://apicyberfusion.onrender.com/login
+Content-Type: application/json
+ 
+ {
+  "email": "harsha@gmail.com",
+      "password": "password"
+      }
+
+###
+POST http://localhost:3000/login
 Content-Type: application/json
 
-
+{
+  "email": "prity@gmail.com",
+    "password": "password"
+}

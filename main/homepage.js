@@ -7,6 +7,22 @@ let peamail = document.getElementById('email').value;
 let password = document.getElementById('password').value; 
 let mainSection = document.getElementById("container");
 let pagination = document.getElementById("p-pagination");
+let signout = document.getElementById("signout");
+
+// Adding user input---
+let addNameInput = document.getElementById("regName");
+let addEmailInput = document.getElementById("regEmail");
+let addPassInput = document.getElementById("regPassword");
+let userCreateBtn = document.getElementById("p-reg-btnn");
+// let userRegBtn = document.getElementById("showRegistrationPage");
+let userURL = "https://apicyberfusion.onrender.com/users";
+
+let newUserp = document.getElementById("pright");
+
+// Loginn--
+let addUsernameLogin = document.getElementById("email");
+let addPassLogin = document.getElementById("password");
+let loginBtn = document.getElementById("prlogin-btn")
 
 function openLogin(){
     plogIn.style.display = 'block';
@@ -48,13 +64,17 @@ function showRegistrationPage() {
     document.getElementById('registrationPage').classList.add('hidden');
     document.body.style.overflow = 'hidden'; 
   }
-  document.getElementById('createAccountBtn').addEventListener('click', showRegistrationPage);
+  document.getElementById('createAccountBtn').addEventListener('click', (e)=>{
+    e.preventDefault();
+    showRegistrationPage();
+  });
   function closeRegForm(){
     pregistration.style.display = 'none';
     document.body.style.overflow = 'auto';
 }
 
 // Bottom cards----Top offers--
+
 
 let hotelURL = "https://apicyberfusion.onrender.com/hotels";
 async function fetchData(url,pageNum){
@@ -121,7 +141,7 @@ function createBtn(number) {
   const startPage = Math.max(1, currentPage - Math.floor(maxButtonsToShow / 2));
   const endPage = Math.min(number, startPage + maxButtonsToShow - 1);
 
-  if (currentPage > 1) {
+  if (currentPage > 0) {
     const prevBtn = createPaginationButton('Prev', currentPage - 1);
     pagination.appendChild(prevBtn);
   }
@@ -148,3 +168,56 @@ function createPaginationButton(text, pageNum) {
   });
   return pageBtn;
 }
+
+// Adding new user--
+async function createNewData(url){
+  try{
+    const newUserData={
+      email:addEmailInput.value,
+      password:addPassInput.value,
+      username:addNameInput.value,
+    };
+    let res = await fetch(url,{
+      method:"POST",
+      headers:{"Content-Type":"application/json"},
+      body:JSON.stringify(newUserData),
+    });
+    const updateData = await res.json();
+    fetchData(userURL);
+  }catch(error){
+    console.log(error);
+  }
+}
+userCreateBtn.addEventListener("click",(e)=>{
+  e.preventDefault();
+  createNewData(userURL);
+  alert("Login Successfully....!")
+  const userNamep = addNameInput.value;
+  closeRegForm();
+  newUserp.innerHTML = `<div><span id="user-image-pr" class="usericonn">Hi, ${userNamep}</span></div>
+`;
+  signout.style.display = 'block';
+})
+
+
+async function loginData(){
+  try{
+   let res = await fetch("https://apicyberfusion.onrender.com/users/1")
+   let data = await res.json();
+    
+      console.log(data);
+      console.log(data.email,data.username,data.password);
+      if(addUsernameLogin.value ==  data.email && addPassLogin.value == data.password){
+        alert("login successfull..");
+        newUserp.innerHTML = `<div><span id="user-image-pr" class="usericonn">Hi, ${data.username}</span></div>`;
+      }else{
+        alert("Invalid username and password")
+      }
+  }catch(error){
+
+  }
+}
+loginBtn.addEventListener("click",(e)=>{
+  e.preventDefault();
+  loginData(userURL);
+})

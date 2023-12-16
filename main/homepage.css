@@ -15,25 +15,26 @@ main {
     /* height: 100vh; */
 }
 
+
 /* Top section styles */
 
 #ptop {
-    background: url(./assets/Aussenansicht-10-scaled.webp) center/cover no-repeat;
-    height: 85vh;
+    background:rgba(0,0,0,0.1) url(https://images.hdqwalls.com/wallpapers/city-lights-moon-vibrant-4k-30.jpg) center/cover no-repeat;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    color: #faf6f6; 
-    
-}
+    color: #f6f8fa; 
+  }
 
 #pnav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    background-color: #fff;
+    background-color: #f4f4f4;
     position: relative; /* Needed for z-index to work */
     z-index: 2;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 #pleft {
@@ -72,7 +73,7 @@ main {
 }
 
 #pmembership,
-#plogin {
+#plogin,#singout {
     padding: 14px 30px;
     font-size: 18px;
     font-weight: 500;
@@ -81,7 +82,9 @@ main {
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
 }
-
+.sign-pout{
+ display: none;
+}
 #pmembership {
     background-color: #f51111;
     color: #f7f3f3;
@@ -90,15 +93,28 @@ main {
 }
 
 #pmembership:hover,
-#plogin:hover {
+#plogin, #singout:hover {
     background-color: #333;
     color: #fff;
 }
 
+/* search btns */
+.pr{
+  color: #000000;
+  height: 50px;
+  width: 100px;
+  border: 1px solid black;
+}
+
+.pr-btns{
+  height: 50px;
+  width: 300px;
+  display: flex;
+}
 /* Search area styles */
 #psearch {
-    flex: 1;
-    display: flex;
+    /* flex: 1;
+    display: flex; */
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -106,12 +122,37 @@ main {
 
 #phead {
     font-size: 70px;
-    color:#f8f8f8;
+    color:#fff;
     margin-top: 20px;
-    margin-bottom: 300px;
+    /* margin-bottom: 300px; */
     font-weight: 600;
 }
+.swit-para{
+  font-size: 25px;
+  color: #fff;
+  margin-top: 30px;
+}
+.sp-inp{
+   height: 45px;
+   width: 300px;
+   border: 6px solid rgb(215, 187, 7);
+}
+.all-pr-btns{
+  margin-top: 110px;
+  margin-left: 310px;
+}
+.sp-filter{
+  height: 55px;
 
+}
+.ps-search{
+  background-color: #f51111;
+  color: #f9f1f1;
+  font-size: 24px;
+  height: 55px;
+  border: 4px solid rgb(215, 187, 7);
+  margin-left: -5px;
+}
 /* Footer styles (Bottom) */
 /* #pbuttom {
     background-color: #333;
@@ -129,6 +170,13 @@ main {
     background-color: rgba(0, 0, 0, 0.8);
     
   
+}
+.moda{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 
@@ -167,7 +215,7 @@ main {
     color: #555;
   }
 .hplogin{
-    font-size: 40px;
+    font-size: 35px;
     text-decoration: underline;
     color: rgb(60, 58, 58);
     margin-top: 25px;
@@ -217,6 +265,15 @@ main {
 .ps-reg{
   background-color: rgba(0, 0, 0, 0.8);
 }
+#user-image-pr{
+  color: #000000;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.1px;
+  font-style: normal;
+
+}
+
 #registrationPage {
     display: none;
     position: fixed;
@@ -275,18 +332,14 @@ main {
     margin-top: 8px;
   }
 .pregg{
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-left: 5px;
 }
 #createAccountBtn{
-    border: none;
-    border: 1px solid white;
-    padding: 8px 20px;
-    cursor: pointer;
-    border-radius: 10px;
+    margin-left: 6px;
 }
 #createAccountBtn:hover{
-    background-color: grey;
-    color: whitesmoke;
+    font-style: italic;
 }
 
 /* Cardd=== */

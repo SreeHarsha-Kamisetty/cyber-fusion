@@ -1,0 +1,77 @@
+
+function visiblea(){
+    var x = document.getElementById("aa");
+    var y=document.getElementById("a");
+  if (x.style.visibility === 'hidden') {
+    x.style.visibility = 'visible';
+    y.style.fontWeight=1000;
+  } else {
+    x.style.visibility = 'hidden';
+    y.style.fontWeight=500;
+  }
+}
+
+function visibleb(){
+    var x = document.getElementById("bb");
+    var y=document.getElementById("b");
+  if (x.style.visibility === 'hidden') {
+    x.style.visibility = 'visible';
+    y.style.fontWeight=1000;
+  } else {
+    x.style.visibility = 'hidden';
+    y.style.fontWeight=500;
+  }
+}
+
+function visiblec(){
+    var x = document.getElementById("cc");
+    var y=document.getElementById("c");
+  if (x.style.visibility === 'hidden') {
+    x.style.visibility = 'visible';
+    y.style.fontWeight=1000;
+  } else {
+    x.style.visibility = 'hidden';
+    y.style.fontWeight=500;
+  }
+}
+
+function visibled(){
+    var x = document.getElementById("dd");
+    var y=document.getElementById("d");
+  if (x.style.visibility === 'hidden') {
+    x.style.visibility = 'visible';
+    y.style.fontWeight=1000;
+  } else {
+    x.style.visibility = 'hidden';
+    y.style.fontWeight=500;
+  }
+}
+let buy_button = document.getElementById('buy-1');
+let buy_button_2 = document.getElementById('buy-2');
+let buy_button_3 = document.getElementById('buy-3');
+
+let mem_card ;
+buy_button.addEventListener('click',(e) =>{
+  e.preventDefault();
+  localStorage.setItem('mem_card',1);
+  localStorage.setItem('hotelid',false);
+  console.log("Test");
+  window.location.href = 'payment.html';
+  
+})
+buy_button_2.addEventListener('click',(e) =>{
+  e.preventDefault();
+  localStorage.setItem('mem_card',1);
+  localStorage.setItem('hotelid',false);
+  console.log("Test");
+  window.location.href = 'payment.html';
+  
+})
+buy_button_3.addEventListener('click',(e) =>{
+  e.preventDefault();
+  localStorage.setItem('mem_card',1);
+  localStorage.setItem('hotelid',false);
+  console.log("Test");
+  window.location.href = 'payment.html';
+  
+})
