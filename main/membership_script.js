@@ -46,3 +46,32 @@ function visibled(){
     y.style.fontWeight=500;
   }
 }
+let buy_button = document.getElementById('buy-1');
+let buy_button_2 = document.getElementById('buy-2');
+let buy_button_3 = document.getElementById('buy-3');
+
+let mem_card ;
+buy_button.addEventListener('click',(e) =>{
+  e.preventDefault();
+  localStorage.setItem('mem_card',1);
+  localStorage.setItem('hotelid',false);
+  console.log("Test");
+  window.location.href = 'payment.html';
+  
+})
+buy_button_2.addEventListener('click',(e) =>{
+  e.preventDefault();
+  localStorage.setItem('mem_card',1);
+  localStorage.setItem('hotelid',false);
+  console.log("Test");
+  window.location.href = 'payment.html';
+  
+})
+buy_button_3.addEventListener('click',(e) =>{
+  e.preventDefault();
+  localStorage.setItem('mem_card',1);
+  localStorage.setItem('hotelid',false);
+  console.log("Test");
+  window.location.href = 'payment.html';
+  
+})

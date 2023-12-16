@@ -141,6 +141,7 @@ function CreateCards(data) {
     book.addEventListener('click',()=>{
       hotelid = element.id;
       localStorage.setItem('hotelid',hotelid);
+      localStorage.setItem('mem_card',false);
       window.location.href = 'payment.html';
    })
 
