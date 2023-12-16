@@ -34,6 +34,7 @@ main {
     background-color: #f4f4f4;
     position: relative; /* Needed for z-index to work */
     z-index: 2;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 #pleft {

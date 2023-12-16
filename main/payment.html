@@ -18,10 +18,11 @@
     <link rel="stylesheet" href="./footer.css" />
   </head>
   <body>
-    <header>
+    <div id="rnavbar-container"></div>
+    <!-- <header>
       <a href="#">Home</a><span>/</span><a href="#">Buy HotelCard</a
       ><span>/</span><a href="#" style="color: red">HotelCard membership</a>
-    </header>
+    </header> -->
     <div class="rHeading">
       <h1>Become a member now and start saving</h1>
     </div>
@@ -125,26 +126,26 @@
         <div class="rCard2">
           <div>
             <input type="checkbox" id="rcheckbox-2" />
-            <label for="rcheckbox-2">Your HotelCard for 1 year:</label>
+            <label for="rcheckbox-2" id="rcheckbox-2-text">Your HotelCard for 1 year:</label>
           </div>
-          <div><p class="chf">99 CHF</p></div>
+          <div><p class="chf" id="rcheckbox-2-price">99 CHF</p></div>
         </div>
         <div class="rCard2">
           <div>
             <input type="checkbox" id="rcheckbox-3" />
-            <label for="rcheckbox-3">Your HotelCard for 2 year:</label>
+            <label for="rcheckbox-3" id="rcheckbox-3-text">Your HotelCard for 2 year:</label>
           </div>
           <div>
-            <p class="chf">199 CHF</p>
+            <p class="chf" id="rcheckbox-3-price">199 CHF</p>
           </div>
         </div>
         <div class="rCard2">
           <div>
             <input type="checkbox" id="rcheckbox-4" />
-            <label for="rcheckbox-4">Your HotelCard for 3 year:</label>
+            <label for="rcheckbox-4" id="rcheckbox-4-text">Your HotelCard for 3 year:</label>
           </div>
           <div>
-            <p class="chf">399 CHF</p>
+            <p class="chf" id="rcheckbox-4-price">399 CHF</p>
           </div>
         </div>
       </div>
@@ -158,23 +159,37 @@
       <div class="rcheckboxDiv">
         <div class="rcheckbox">
           <input type="checkbox" id="custom-checkbox" />
-          <label for="custom-checkbox" id="custom-checkbox-label"
+          <label
+            for="custom-checkbox"
+            id="custom-checkbox-label"
+            required="must be field"
             >Digital Card</label
           >
         </div>
         <div class="rcheckbox">
           <input type="checkbox" id="custom-checkbox1" />
-          <label for="custom-checkbox1" id="custom-checkbox-label1"
+          <label
+            for="custom-checkbox1"
+            id="custom-checkbox-label1"
+            required="must be field"
             >Physical Hotel Card</label
           >
         </div>
       </div>
     </div>
+
+    <!-- form -->
+
     <div class="delevery-add">
       <div class="rInvoice">
         <div class="mb-3">
           <label for="formGroupExampleInput" class="form-label">E-mail *</label>
-          <input type="text" class="form-control" id="formGroupExampleInput" />
+          <input
+            type="email"
+            class="form-control"
+            id="formGroupExampleInput"
+            required="must be field"
+          />
         </div>
         <!-- name and last name -->
 
@@ -187,6 +202,7 @@
               id="firstName"
               placeholder="First name"
               aria-label="First name"
+              required="must be field"
             />
           </div>
           <div class="col">
@@ -197,6 +213,7 @@
               id="lastName"
               placeholder="Last name"
               aria-label="Last name"
+              required="must be field"
             />
           </div>
         </div>
@@ -209,6 +226,7 @@
             class="form-select"
             id="exampleSelect"
             aria-label="Default select example"
+            required="must be field"
           >
             <option selected>Choose a county</option>
             <option value="1">India</option>
@@ -224,39 +242,47 @@
             <!-- Additional options can be added here -->
           </select>
         </div>
-        <!-- Zipcode country -->
 
-        <div class="row">
-          <div class="col">
-            <label for="Zipcode" class="form-label">ZIP code *</label>
-            <input
-              type="text"
-              class="form-control"
-              id="Zipcode"
-              placeholder="Zipcode"
-              aria-label="Zipcode"
-            />
-          </div>
-          <div class="col">
-            <label for="City" class="form-label">City *</label>
-            <input
-              type="text"
-              class="form-control"
-              id="City"
-              placeholder="City"
-              aria-label="City"
-            />
-          </div>
-        </div>
         <!-- Address -->
 
         <div class="mb-3">
           <label for="formGroupExampleInput1" class="form-label"
             >Address *</label
           >
-          <input type="text" class="form-control" id="formGroupExampleInput1" />
+          <input
+            type="text"
+            class="form-control"
+            id="formGroupExampleInput1"
+            required="must be field"
+          />
         </div>
 
+        <!-- card cvv -->
+
+        <div class="row">
+          <div class="col">
+            <label for="rCard" class="form-label">Card *</label>
+            <input
+              type="number"
+              class="form-control"
+              id="rCard"
+              placeholder="Enter Debit / Credit No"
+              aria-label="eCard"
+              required="must be field"
+            />
+          </div>
+          <div class="col">
+            <label for="rcvv" class="form-label">Cvv *</label>
+            <input
+              type="number"
+              class="form-control"
+              id="rcvv"
+              placeholder="cvv"
+              aria-label="rcvv"
+              required="must be field"
+            />
+          </div>
+        </div>
         <!-- Phone & dob -->
         <div class="row">
           <div class="col">
@@ -267,6 +293,7 @@
               id="Phone"
               placeholder="Phone"
               aria-label="Phone"
+              required="must be field"
             />
           </div>
           <div class="col">
@@ -277,11 +304,14 @@
               id="d-o-b"
               placeholder="Date of Birth"
               aria-label="Date of Birth"
+              required="must be field"
             />
           </div>
         </div>
       </div>
     </div>
+
+    <!-- gift div -->
     <div class="rOrderDiv">
       <div class="rOrderInnDiv">
         <div class="giftCardDiv">
@@ -306,11 +336,11 @@
           </div>
           <div class="rQd">
             <p>Description</p>
-            <p>Your HotelCard for 1 year</p>
+            <p id="payment-desc">Your HotelCard for 1 year</p>
           </div>
           <div class="rQd">
             <p>Price</p>
-            <p>99 CHF</p>
+            <p id="payment-price">99 CHF</p>
           </div>
         </div>
         <hr />
@@ -320,17 +350,25 @@
             <p>All prices include VAT</p>
           </div>
           <div>
-            <p style="font-size: 30px; font-weight: bold; color: #49c473">
+            <p style="font-size: 30px; font-weight: bold; color: #49c473" id="total-price">
               99 CHF
             </p>
           </div>
         </div>
 
         <div class="rodrinvBtn">
-          <button type="button" class="btn btn-outline-danger">
+          <button
+            type="button"
+            class="btn btn-outline-danger"
+            onclick="validateDeliveryForm()"
+          >
             Order Now
           </button>
-          <button type="button" class="btn btn-outline-secondary">
+          <button
+            type="button"
+            class="btn btn-outline-secondary"
+            onclick="validateDeliveryForm()"
+          >
             Pay By Invoice
           </button>
         </div>
@@ -584,5 +622,6 @@
     </div>
 
     <script src="payment.js"></script>
+    <script src="navbar.js"></script>
   </body>
 </html>
