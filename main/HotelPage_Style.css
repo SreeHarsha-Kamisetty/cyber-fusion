@@ -233,10 +233,10 @@ main {
     cursor: pointer;
     border-radius: 10px;
 }
-#createAccountBtn:hover{
+/* #createAccountBtn:hover{
     background-color: grey;
     color: whitesmoke;
-}
+} */
 /* Header end */
 
 

@@ -1,0 +1,75 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+#contact-p{
+    display: flex;
+    margin-top: 3%;
+
+}
+#ryt-contact{
+    margin-left: 45%;
+}
+#left-contact{
+  margin-left: 7%;
+}
+#p-mob,#p-con-email,#p-con-loc{
+    display: flex;
+    margin-top: 20%;
+    font-size: 16px;
+}
+.mobNump{
+    margin-left: 13%;
+}
+.material-symbols-outlined{
+    font-size: 18px;
+}
+.emailpr{
+    margin-left: 12%;
+}
+.locationpr{
+    margin-left: 12%;
+}
+.pr-social{
+    margin-top: 30%;
+}
+.prsocial{
+    display: flex;
+    margin-left: 5%;
+}
+.fa-instagram,.fa-pinterest,.fa-telegram{
+margin-left: 10%;
+}
+#prsocial i{
+  font-size: 25px;
+}
+#msgname,#msgemail{
+    height: 11%;
+    width: 90%;
+    border-radius: 4px;
+    background-color: #ecebeb;
+}
+#msgemail{
+    margin-top: 20px;
+}
+#msgtext{
+    margin-top: 20px;
+    border-radius: 4px;
+    background-color: #ecebeb;
+    border-radius: 7px;
+}
+#msgSendBtn{
+margin-top: 20px; 
+padding: 10px 40px;
+border-radius: 40px;
+margin-left: 65px;
+background-color: rgb(238, 52, 52);
+color: #fff;
+font-size: 16px;
+}
+/* Media Query */
+@media screen and (max-width:700px) {
+    #contact-p{
+        display: flex;
+        flex-direction: column;
+    }
+}

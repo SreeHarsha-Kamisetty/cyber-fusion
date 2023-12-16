@@ -202,19 +202,19 @@ userCreateBtn.addEventListener("click",(e)=>{
 
 async function loginData(){
   try{
-   let res = await fetch("https://apicyberfusion.onrender.com/users/1")
+   let res = await fetch(`https://apicyberfusion.onrender.com/users?email_like=${addUsernameLogin.value}`)
    let data = await res.json();
     
-      console.log(data);
-      console.log(data.email,data.username,data.password);
-      if(addUsernameLogin.value ==  data.email && addPassLogin.value == data.password){
+      console.log(data[0]);
+      console.log(data[0].email,data[0].username,data[0].password);
+      if(addUsernameLogin.value ==  data[0].email && addPassLogin.value == data[0].password){
         alert("login successfull..");
-        newUserp.innerHTML = `<div><span id="user-image-pr" class="usericonn">Hi, ${data.username}</span></div>`;
+        newUserp.innerHTML = `<div><span id="user-image-pr" class="usericonn">Hi, ${data[0].username}</span></div>`;
       }else{
         alert("Invalid username and password")
       }
   }catch(error){
-
+    console.log(error);
   }
 }
 loginBtn.addEventListener("click",(e)=>{
