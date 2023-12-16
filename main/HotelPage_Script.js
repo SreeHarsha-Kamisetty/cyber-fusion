@@ -240,3 +240,8 @@ search_button.addEventListener('click',()=>{
     fetchData(hotelURL,1,`&${search_input.value}_like=${search_text.value}`)
   }
 })
+let memberShip = document.getElementById('pmembership');
+memberShip.addEventListener('click',()=>{
+  console.log("clicked");
+  window.location.href = 'membershipPage.html'
+})
