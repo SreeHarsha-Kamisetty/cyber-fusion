@@ -18,6 +18,10 @@ let userURL = "https://apicyberfusion.onrender.com/users";
 
 let newUserp = document.getElementById("pright");
 
+// Loginn--
+let addUsernameLogin = document.getElementById("email");
+let addPassLogin = document.getElementById("password");
+let loginBtn = document.getElementById("prlogin-btn")
 
 function openLogin(){
     plogIn.style.display = 'block';
@@ -170,6 +174,7 @@ async function createNewData(url){
     const newUserData={
       email:addEmailInput.value,
       password:addPassInput.value,
+      username:addNameInput.value,
     };
     let res = await fetch(url,{
       method:"POST",
@@ -188,7 +193,39 @@ userCreateBtn.addEventListener("click",(e)=>{
   alert("Login Successfully....!")
   const userNamep = addNameInput.value;
   closeRegForm();
-  newUserp.innerHTML = `<div><a href="./membershipPage.html"><button id="pmembership">Membership</button></a> 
-  <button id="plogin">${userNamep}</button></div>
+  newUserp.innerHTML = `<div><span id="user-image-pr" class="usericonn">Hi, ${userNamep}</span></div>
 `
+})
+
+
+// Login--
+async function loginData(url){
+  try{
+    const newLoginData={
+
+      email:addUsernameLogin.value,
+      password:addPassLogin.value,
+      
+      
+    };
+    let res = await fetch(url,{
+      method:"POST",
+    });
+    if(res.ok){
+      alert("Login Successfully....!")
+      const userNamep = newLoginData.username;
+       closeRegForm();
+       newUserp.innerHTML = `<div><span id="user-image-pr" class="usericonn">Hi, ${userNamep}</span></div>
+       `;
+    }else{
+      alert("Invalid Email");
+    }
+    
+  }catch(error){
+    console.log(error);
+  }
+}
+loginBtn.addEventListener("click",(e)=>{
+  e.preventDefault();
+  loginData(userURL);
 })
