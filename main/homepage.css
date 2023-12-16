@@ -91,11 +91,17 @@ main {
     margin-right: 10px;
     font-size: 19px;
 }
-
-#pmembership:hover,
-#plogin, #singout:hover {
+#plogin{
+  color: #0f0f0f;
+  background-color: #cfc9c9;
+}
+#pmembership:hover, #singout:hover {
     background-color: #333;
     color: #fff;
+}
+#plogin:hover{
+  background-color: #080808;
+  color: #f3ebeb;
 }
 
 /* search btns */
@@ -140,6 +146,8 @@ main {
 .all-pr-btns{
   margin-top: 110px;
   margin-left: 310px;
+  display: flex;
+
 }
 .sp-filter{
   height: 55px;
