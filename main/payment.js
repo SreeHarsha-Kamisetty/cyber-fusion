@@ -122,7 +122,8 @@ checkbox_4.addEventListener('click',()=>{
 })
 // for loading the hotel booking in payment 
 let hotelid = localStorage.getItem('hotelid');
-if(hotelid){
+let mem_card = localStorage.getItem('mem_card');
+if(hotelid != "false"){
   let container1 = document.getElementById('main-container')
   let details =[];
 container1.innerHTML = ""
