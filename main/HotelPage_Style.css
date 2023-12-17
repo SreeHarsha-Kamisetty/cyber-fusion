@@ -568,3 +568,21 @@ font-family: 'Poppins', sans-serif;
     border-radius: 10px;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
+/* Logout */
+#logout-btnp{
+    font-size: 25px;
+    background-color: #f51111;
+    font-style: italic;
+    border:none;
+    font-weight: 600;
+    cursor: pointer;
+    color: #ffffff;
+    padding: 10px 30px;
+    border-radius: 60px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  #logout-btnp:hover{
+    background-color: #000;
+    color: #fff;
+    padding: 11px 31px;
+  }

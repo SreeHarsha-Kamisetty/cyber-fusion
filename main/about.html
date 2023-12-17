@@ -19,11 +19,169 @@
     />
 
     <link rel="stylesheet" href="./footer.css" />
+    <link rel="stylesheet" href="HotelPage_Style.css">
   </head>
   <body>
     <!-- navbar -->
 
-    <div id="rnavbar-container"></div>
+    <main>
+      <!-- Top -->
+      <div id="ptop">
+        <nav id="pnav">
+          <div id="pleft">
+            <img src="assets/newone.png" alt="logo" id="plogo" />
+            <div id="linksp">
+              <a href="./homepage.html" class="plink">Home</a>
+              <a href="hotelPage.html" class="plink">Book a Hotel</a>
+              <a href="about.html" class="plink">About Us</a>
+              <a href="./contact.html" class="plink">Contact Us</a>
+              <a href="./bookingpage.html" class="plink">Bookings</a>
+            </div>
+          </div>
+
+          <div id="pright">
+            <div>
+              <button id="pmembership">Membership</button>
+              <button id="plogin">Log In</button>
+            </div>
+
+            <!-- Hidden menu -->
+          </div>
+        </nav>
+      </div>
+      <!-- Login Modal -->
+      <div id="loginModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeLoginModal()">&times;</span>
+          <h2 class="hplogin">Login to our HotelCard</h2>
+          <form id="loginForm">
+            <label for="email" class="lpemail">E-mail *</label> <br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              class="pinput"
+              placeholder="Enter Your Email"
+            />
+            <br />
+            <br />
+            <br />
+
+            <label for="password" class="lpemail">Password *</label>
+            <span class="show-password" onclick="togglePassword()">Show</span>
+            <br />
+            <div class="password-container">
+              <input
+                type="password"
+                id="password"
+                name="password"
+                class="pinput"
+                placeholder="Enter Your Password"
+                required
+              />
+            </div>
+
+            <button type="button" onclick="performLogin()" class="ploginbtn">
+              Login</button
+            ><br />
+            <div class="pregg"> <span>Don't have an account</span>
+              <a href="#" id="createAccountBtn">Create Account</a>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Registrationn -->
+      <div id="registrationPage" class="hidden">
+        <span class="close" onclick="closeRegForm()">&times;</span>
+        <h2>Create an Account</h2>
+        <form id="registrationForm">
+          <label for="regName" class="reglabel">Name *</label> <br />
+          <input
+            type="text"
+            id="regName"
+            name="regName"
+            required
+            placeholder="Enter Your Name"
+            class="regInp"
+          />
+          <br />
+          <br />
+
+          <label for="regEmail" class="reglabel">E-mail *</label> <br />
+          <input
+            type="email"
+            id="regEmail"
+            name="regEmail"
+            required
+            placeholder="Enter Your Email"
+            class="regInp"
+          />
+          <br />
+          <br />
+
+          <label for="regPassword" class="reglabel">Create Password *</label>
+          <br />
+          <input
+            type="password"
+            id="regPassword"
+            name="regPassword"
+            required
+            placeholder="Create Your Password"
+            class="regInp"
+          />
+          <br />
+          <br />
+
+          <label for="regMobile" class="reglabel">Mobile Number *</label>
+          <br />
+          <input
+            type="tel"
+            id="regMobile"
+            name="regMobile"
+            required
+            placeholder="Enter Your Mobile Number"
+            class="regInp"
+          />
+          <br />
+          <br />
+
+          <label for="regState" class="reglabel">State *</label> <br />
+          <input
+            type="text"
+            id="regState"
+            name="regState"
+            required
+            placeholder="Enter Your State"
+            class="regInp"
+          />
+          <br />
+          <br />
+
+          <label for="regPincode" class="reglabel">Pincode *</label> <br />
+          <input
+            type="text"
+            id="regPincode"
+            name="regPincode"
+            required
+            placeholder="Enter Your Pincode"
+            class="regInp"
+          />
+          <br />
+          <br />
+
+          <button
+            type="button"
+            onclick="performRegistration()"
+            class="regloginbtn"
+          >
+            Register
+          </button>
+        </form>
+      </div>
+    </main>
+    <hr>
 
     <!-- header -->
     <!-- <header>
@@ -305,7 +463,6 @@
         </div>
       </div>
     </div>
-
-    <script src="navbar.js"></script>
+    <script src="./about.js"></script>
   </body>
 </html>
