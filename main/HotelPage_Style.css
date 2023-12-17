@@ -28,7 +28,8 @@ main {
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    background-color: #fff;
+   
+    background-color: #f3dcdc;
     position: relative; /* Needed for z-index to work */
     z-index: 2;
 }
