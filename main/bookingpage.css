@@ -1,5 +1,7 @@
 .bookingcontainer {
     /* border: 2px solid red; */
+    /* background-color: #19dfdc; */
+    background-image: url(https://wallpaperaccess.com/full/1567679.jpg);
     width: 100%;
     height: auto;
     display: flex;
@@ -7,7 +9,7 @@
 
 .bookingicons {
     /* border: 2px solid green; */
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    /* box-shadow: rgba(0, 0, 0, 0.59) 1.95px 1.95px 2.6px; */
     width: 25%;
     height: 450px;
     margin: 5%;
@@ -16,8 +18,10 @@
     display: flex;
     flex-direction: column;
     padding: 3%;
+    border-radius: 10px;
     gap: 5%;
     font-size: 12px;
+    background-color: #fff;
 
 }
 
@@ -39,11 +43,13 @@
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     width: 70%;
     height: auto;
+    background-color: #fff;
     margin-top: 5%;
     margin-bottom: 5%;
     margin-right: 5%;
     margin-left: 3%;
     padding: 15px;
+    border-radius: 10px;
 }
 
 .shbzcard {

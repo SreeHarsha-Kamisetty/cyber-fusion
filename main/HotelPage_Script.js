@@ -68,9 +68,10 @@ async function fetchData(url, pageNo, qparams = "") {
   try {
     if(localStorage.getItem("region")){
       qparams=`&region_like=${localStorage.getItem("region")}`
-    }else{
-      qparams="";
     }
+    //else{
+    //   qparams="";
+    // }
     let res = await fetch(`${url}?_limit=8&_page=${pageNo}${qparams}`);
     localStorage.removeItem("region");
     let totalPost = res.headers.get("X-Total-Count");
@@ -98,7 +99,7 @@ function CreateCards(data) {
     let image = document.createElement("img");
     image.setAttribute("class", "card-img");
     image.alt = "Card Image";
-    image.src = `../APIserver/${element.image}`;
+    image.src = `./${element.image}`;
 
     let cardDetails = document.createElement("div");
     cardDetails.setAttribute("class", "card-details");
@@ -253,6 +254,7 @@ search_button.addEventListener('click',()=>{
   if(search_input.value != "default"){
     pagination[0].innerHTML = ""
     container[0].innerHTML = ""
+    console.log(search_input.value,search_text.value)
     fetchData(hotelURL,1,`&${search_input.value}_like=${search_text.value}`)
   }
 })
@@ -270,6 +272,12 @@ function checkUserLogin(){
    user_name = localStorage.getItem('user_name')
    let newUserp = document.getElementById("pright");
     newUserp.innerHTML = `<div><span id="user-image-pr" class="usericonn"><button id="logout-btnp"> ${user_name}</button></span></div>`;
+    let logoutp = document.getElementById("logout-btnp");
+    logoutp.addEventListener("click",(e)=>{
+     // e.preventDefault();
+     console.log(e);
+     logoutUser();
+   })
   }
 }
 checkUserLogin();
