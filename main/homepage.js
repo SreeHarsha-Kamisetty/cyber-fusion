@@ -109,7 +109,7 @@ function createCard(item){
   card.className = "p-card";
 
   const image = document.createElement("img");
-  image.src = `./images/${item.image}`;
+  image.src = `./${item.image}`;
   card.appendChild(image);
 
   const title = document.createElement("h3");
