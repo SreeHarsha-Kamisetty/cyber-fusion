@@ -109,7 +109,7 @@ function createCard(item){
   card.className = "p-card";
 
   const image = document.createElement("img");
-  image.src = `../APIserver/${item.image}`;
+  image.src = `./${item.image}`;
   card.appendChild(image);
 
   const title = document.createElement("h3");
@@ -210,7 +210,7 @@ async function loginData(){
     
       console.log(data[0]);
       console.log(data[0].email,data[0].username,data[0].password);
-      userid = data[0].id
+      userid = data[0].id;
       user_name = data[0].username
       console.log(userid,user_name)
       
@@ -224,10 +224,11 @@ async function loginData(){
       user_name = localStorage.getItem('user_name')
         newUserp.innerHTML = `<div><span id="user-image-pr" class="usericonn"><button id="logout-btnp"> ${user_name}</button></span></div>`;
         let logoutp = document.getElementById("logout-btnp");
-         logoutp.addEventListener("click",()=>{
+         logoutp.addEventListener("click",(e)=>{
+          // e.preventDefault();
+          console.log(e);
           logoutUser();
-          
-         })
+        })
       }else{
         alert("Invalid username and password")
       }
@@ -237,7 +238,7 @@ async function loginData(){
 }
 loginBtn.addEventListener("click",(e)=>{
   e.preventDefault();
-  loginData(userURL);
+  loginData();
 })
 
 // logic for booking button 
@@ -246,7 +247,7 @@ let booking = document.getElementById('booking');
 
 booking.addEventListener('click',(e) =>{
   e.preventDefault();
-  login = localStorage.getItem('login');
+  let login = localStorage.getItem('login');
   if(login == "true"){
     window.location.href = 'bookingpage.html'
   }
@@ -258,7 +259,7 @@ booking.addEventListener('click',(e) =>{
 
 // Logout---
 function logoutUser(){
-  login=false;
+  let login = false;
   alert("Logout Successfully");
   localStorage.setItem("login",login);
   newUserp.innerHTML = `<div id="pright">
@@ -297,6 +298,12 @@ function checkUserLogin(){
    user_name = localStorage.getItem('user_name')
    let newUserp = document.getElementById("pright");
     newUserp.innerHTML = `<div><span id="user-image-pr" class="usericonn"><button id="logout-btnp"> ${user_name}</button></span></div>`;
+    let logoutp = document.getElementById("logout-btnp");
+    logoutp.addEventListener("click",(e)=>{
+     // e.preventDefault();
+     console.log(e);
+     logoutUser();
+   })
   }
 }
 checkUserLogin();
