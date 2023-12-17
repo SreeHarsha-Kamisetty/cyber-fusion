@@ -38,6 +38,7 @@ header>a{
     font-weight: bolder;
   
 }
+
 .rContainner1{
     width: 100%;
     display: flex;
@@ -111,6 +112,7 @@ header>a{
     height: 150px;
     /* background-color:aliceblue ; */
 }
+
 .rptaDiv >P{
     font-size: 16px;
     font-weight: bold;
@@ -124,7 +126,6 @@ header>a{
     justify-content: center;
     align-items: center;
 }
-
 .hotelcard-innerDiv{
     width: 60%;
     height: 300px;
@@ -230,14 +231,17 @@ header>a{
 }
 .rInvoice{
     width: 70%;
-    border:  1px solid gray;
+    border:  1px solid rgb(19, 19, 19);
     height: 650px;
     border-radius: 8px;
    padding: 20px; 
    display: flex;
    flex-direction: column;
    gap: 20px;
+   background-color: #e3f2f3;
+   box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.36);
 }
+
 
 
 
