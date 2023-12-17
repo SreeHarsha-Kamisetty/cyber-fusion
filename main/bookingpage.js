@@ -1,6 +1,7 @@
 let bookedhotels = document.getElementById('bookedhotels')
-
-let baseserverUrl = " https://apicyberfusion.onrender.com/users/1"
+let userid
+userid = localStorage.getItem('userid'); // to load bookings for current logged in user 
+let baseserverUrl = `https://apicyberfusion.onrender.com/users/${userid}`
 
 async function fetchBookedData(url) {
     try {
