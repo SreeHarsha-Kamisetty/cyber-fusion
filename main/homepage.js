@@ -199,7 +199,11 @@ userCreateBtn.addEventListener("click",(e)=>{
   signout.style.display = 'block';
 })
 
-
+let userid; // to store userid on login 
+let user_name; // to store username on login
+let login; // to store login status 
+login = false;
+localStorage.setItem('login',login);
 async function loginData(){
   try{
    let res = await fetch(`https://apicyberfusion.onrender.com/users?email_like=${addUsernameLogin.value}`)
@@ -207,9 +211,19 @@ async function loginData(){
     
       console.log(data[0]);
       console.log(data[0].email,data[0].username,data[0].password);
+      userid = data[0].id
+      user_name = data[0].username
+      console.log(userid,user_name)
+      
       if(addUsernameLogin.value ==  data[0].email && addPassLogin.value == data[0].password){
         alert("login successfull..");
-        newUserp.innerHTML = `<div><span id="user-image-pr" class="usericonn">Hi, ${data[0].username}</span></div>`;
+        // store the userid,username and login in local storage for future use.
+        login = true;
+        localStorage.setItem('userid',userid)
+      localStorage.setItem('user_name',user_name);
+      localStorage.setItem('login',login);
+      user_name = localStorage.getItem('user_name')
+        newUserp.innerHTML = `<div><span id="user-image-pr" class="usericonn">Hi, ${user_name}</span></div>`;
       }else{
         alert("Invalid username and password")
       }
@@ -220,4 +234,19 @@ async function loginData(){
 loginBtn.addEventListener("click",(e)=>{
   e.preventDefault();
   loginData(userURL);
+})
+
+// logic for booking button 
+
+let booking = document.getElementById('booking');
+
+booking.addEventListener('click',(e) =>{
+  e.preventDefault();
+  login = localStorage.getItem('login');
+  if(login == "true"){
+    window.location.href = 'bookingpage.html'
+  }
+  else{
+    alert("Please login to access your bookings")
+  }
 })
