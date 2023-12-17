@@ -37,8 +37,9 @@ The StayHub Hotel website was built using the following technologies and tools:
 + Membership Page (membershipPage.html): Explore membership options and create an account.
 
 
-#Getting Started
+# Getting Started
 To explore 7Heaven, simply open the index.html file in your preferred web browser. Use the top navigation bar to access different sections of the website, and utilize the search and filter options to find the perfect hotel for your stay.
+
 
 **API Link** - https://apicyberfusion.onrender.com
 Editing
