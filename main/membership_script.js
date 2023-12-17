@@ -5,11 +5,11 @@ function visiblea(){
   if (x.style.visibility === 'hidden') {
     x.style.visibility = 'visible';
     y.style.fontWeight=1000;
-    y.style.color='yellow';
+    y.style.color='red';
   } else {
     x.style.visibility = 'hidden';
     y.style.fontWeight=500;
-    y.style.color='white';
+    y.style.color='black';
   }
 }
 
@@ -19,11 +19,11 @@ function visibleb(){
   if (x.style.visibility === 'hidden') {
     x.style.visibility = 'visible';
     y.style.fontWeight=1000;
-    y.style.color='yellow';
+    y.style.color='red';
   } else {
     x.style.visibility = 'hidden';
     y.style.fontWeight=500;
-    y.style.color='white';
+    y.style.color='black';
   }
 }
 
@@ -33,11 +33,11 @@ function visiblec(){
   if (x.style.visibility === 'hidden') {
     x.style.visibility = 'visible';
     y.style.fontWeight=1000;
-    y.style.color='yellow';
+    y.style.color='red';
   } else {
     x.style.visibility = 'hidden';
     y.style.fontWeight=500;
-    y.style.color='white';
+    y.style.color='black';
   }
 }
 
@@ -47,11 +47,11 @@ function visibled(){
   if (x.style.visibility === 'hidden') {
     x.style.visibility = 'visible';
     y.style.fontWeight=1000;
-    y.style.color='yellow';
+    y.style.color='red';
   } else {
     x.style.visibility = 'hidden';
     y.style.fontWeight=500;
-    y.style.color='white';
+    y.style.color='black';
   }
 }
 let buy_button = document.getElementById('buy-1');
