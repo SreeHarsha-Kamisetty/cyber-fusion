@@ -5,9 +5,11 @@ function visiblea(){
   if (x.style.visibility === 'hidden') {
     x.style.visibility = 'visible';
     y.style.fontWeight=1000;
+    y.style.color='yellow';
   } else {
     x.style.visibility = 'hidden';
     y.style.fontWeight=500;
+    y.style.color='white';
   }
 }
 
@@ -17,9 +19,11 @@ function visibleb(){
   if (x.style.visibility === 'hidden') {
     x.style.visibility = 'visible';
     y.style.fontWeight=1000;
+    y.style.color='yellow';
   } else {
     x.style.visibility = 'hidden';
     y.style.fontWeight=500;
+    y.style.color='white';
   }
 }
 
@@ -29,9 +33,11 @@ function visiblec(){
   if (x.style.visibility === 'hidden') {
     x.style.visibility = 'visible';
     y.style.fontWeight=1000;
+    y.style.color='yellow';
   } else {
     x.style.visibility = 'hidden';
     y.style.fontWeight=500;
+    y.style.color='white';
   }
 }
 
@@ -41,9 +47,11 @@ function visibled(){
   if (x.style.visibility === 'hidden') {
     x.style.visibility = 'visible';
     y.style.fontWeight=1000;
+    y.style.color='yellow';
   } else {
     x.style.visibility = 'hidden';
     y.style.fontWeight=500;
+    y.style.color='white';
   }
 }
 let buy_button = document.getElementById('buy-1');
