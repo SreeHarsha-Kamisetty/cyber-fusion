@@ -147,3 +147,28 @@ font-family: 'Pixelify Sans', sans-serif;
 font-family: 'Plus Jakarta Sans', sans-serif;
 font-family: 'Poppins', sans-serif;
 }
+@media screen and (max-width: 768px) {
+.shbzupperfooter{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+.shbzmidfooter{
+    display: flex;
+    /* gap: 5px; */
+    justify-content: space-evenly;
+}
+.shbzfooter{
+width: fit-content;
+padding: 15px;
+}
+
+.shbzsubscribe{
+    width: 25vw;
+}
+#shbzmailid{
+    width: 70vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+}
