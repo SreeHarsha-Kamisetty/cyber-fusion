@@ -133,7 +133,9 @@ main {
     margin-top: 20px;
     /* margin-bottom: 300px; */
     font-weight: 600;
+    
 }
+
 .swit-para{
   font-size: 25px;
   color: #fff;
@@ -478,7 +480,7 @@ main {
   }
   .head-service{
     margin-top: 50px;
-    margin-left: 43%;
+    margin-left: 41%;
     padding-top: 40px;
   }
   .para-service{
