@@ -29,7 +29,7 @@ function bookingCard(data) {
         cardimgbody.className = 'shbzcardimgbody';
         let bookedcardimg = document.createElement('img');
         bookedcardimg.className = 'shbzcardimg'
-        bookedcardimg.src = `../APIserver/${item.image}`;
+        bookedcardimg.src = `./${item.image}`;
         bookedcardimg.setAttribute('alt', 'image')
 
 

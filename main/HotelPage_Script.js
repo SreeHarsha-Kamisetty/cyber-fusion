@@ -98,7 +98,7 @@ function CreateCards(data) {
     let image = document.createElement("img");
     image.setAttribute("class", "card-img");
     image.alt = "Card Image";
-    image.src = `../APIserver/${element.image}`;
+    image.src = `./${element.image}`;
 
     let cardDetails = document.createElement("div");
     cardDetails.setAttribute("class", "card-details");
