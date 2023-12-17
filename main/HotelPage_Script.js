@@ -66,7 +66,13 @@ fetchData(hotelURL, 1);
 
 async function fetchData(url, pageNo, qparams = "") {
   try {
+    if(localStorage.getItem("region")){
+      qparams=`&region_like=${localStorage.getItem("region")}`
+    }else{
+      qparams="";
+    }
     let res = await fetch(`${url}?_limit=8&_page=${pageNo}${qparams}`);
+    localStorage.removeItem("region");
     let totalPost = res.headers.get("X-Total-Count");
     let totalbtns = Math.ceil(totalPost / 8);
 
@@ -139,10 +145,14 @@ function CreateCards(data) {
     book.setAttribute("class", "book-button");
     book.innerText = "Book Now";
     book.addEventListener('click',()=>{
+      if(localStorage.getItem("login")=="true"){
       hotelid = element.id;
       localStorage.setItem('hotelid',hotelid);
       localStorage.setItem('mem_card',false);
       window.location.href = 'payment.html';
+      }else{
+        alert("Please login to book!")
+      }
    })
 
     cardDetails.append(h1, small, p1, p2, p3, p4, h4, h3, book);
@@ -251,3 +261,15 @@ memberShip.addEventListener('click',()=>{
   console.log("clicked");
   window.location.href = 'membershipPage.html'
 })
+// Login-----
+
+
+
+function checkUserLogin(){
+  if(localStorage.getItem("login")=="true"){
+   user_name = localStorage.getItem('user_name')
+   let newUserp = document.getElementById("pright");
+    newUserp.innerHTML = `<div><span id="user-image-pr" class="usericonn"><button id="logout-btnp"> ${user_name}</button></span></div>`;
+  }
+}
+checkUserLogin();
