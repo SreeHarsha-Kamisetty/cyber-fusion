@@ -198,12 +198,11 @@ userCreateBtn.addEventListener("click",(e)=>{
 `;
   signout.style.display = 'block';
 })
+// Login data-------
 
 let userid; // to store userid on login 
 let user_name; // to store username on login
-let login; // to store login status 
-login = false;
-localStorage.setItem('login',login);
+// localStorage.setItem('login',login);
 async function loginData(){
   try{
    let res = await fetch(`https://apicyberfusion.onrender.com/users?email_like=${addUsernameLogin.value}`)
@@ -218,12 +217,17 @@ async function loginData(){
       if(addUsernameLogin.value ==  data[0].email && addPassLogin.value == data[0].password){
         alert("login successfull..");
         // store the userid,username and login in local storage for future use.
-        login = true;
+       let login = true;
         localStorage.setItem('userid',userid)
       localStorage.setItem('user_name',user_name);
       localStorage.setItem('login',login);
       user_name = localStorage.getItem('user_name')
-        newUserp.innerHTML = `<div><span id="user-image-pr" class="usericonn">Hi, ${user_name}</span></div>`;
+        newUserp.innerHTML = `<div><span id="user-image-pr" class="usericonn"><button id="logout-btnp"> ${user_name}</button></span></div>`;
+        let logoutp = document.getElementById("logout-btnp");
+         logoutp.addEventListener("click",()=>{
+          logoutUser();
+          
+         })
       }else{
         alert("Invalid username and password")
       }
@@ -250,3 +254,49 @@ booking.addEventListener('click',(e) =>{
     alert("Please login to access your bookings")
   }
 })
+
+
+// Logout---
+function logoutUser(){
+  login=false;
+  alert("Logout Successfully");
+  localStorage.setItem("login",login);
+  newUserp.innerHTML = `<div id="pright">
+  <div>
+    <a href="./membershipPage.html"
+      ><button id="pmembership">Membership</button></a
+    >
+    <button id="plogin">Log In</button>
+  </div>
+
+</div>`;
+
+let plogIn = document.getElementById("loginModal")
+let ploginBtn = document.getElementById("plogin")
+let passInput = document.getElementById("password");
+let shwPass = document.querySelector(".show-password");
+let peamail = document.getElementById('email');
+let password = document.getElementById('password'); 
+let loginBtn2 = document.getElementById("loginclick");
+ploginBtn.addEventListener("click",openLogin);
+peamail.value= "";
+password.value="";
+}
+// Serach
+let searchRegBtn = document.getElementById("reg-serach");
+let selectRegBtn = document.getElementById("select-reg");
+searchRegBtn.addEventListener("click",(e)=>{
+  e.preventDefault();
+   console.log(selectRegBtn.value);
+   localStorage.setItem("region", selectRegBtn.value);
+   window.location.href="hotelPage.html";
+})
+// Check login
+function checkUserLogin(){
+  if(localStorage.getItem("login")=="true"){
+   user_name = localStorage.getItem('user_name')
+   let newUserp = document.getElementById("pright");
+    newUserp.innerHTML = `<div><span id="user-image-pr" class="usericonn"><button id="logout-btnp"> ${user_name}</button></span></div>`;
+  }
+}
+checkUserLogin();

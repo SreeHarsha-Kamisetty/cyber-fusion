@@ -53,26 +53,24 @@
                 ><button id="pmembership">Membership</button></a
               >
               <button id="plogin">Log In</button>
-              <button id="signout" class="sign-pout">Log Out</button>
             </div>
 
-            <!-- Hidden menu -->
           </div>
         </nav>
         <!-- search are -->
         <div id="psearch">
           <h1 id="phead">
             The best hotel deals in <br />
-            Dubai
+            Switzerland
           </h1>
           <p class="swit-para">
             Discover your new favourite stay. Find deals for any season,from
-            cozy bed &and; breakfasts to <br />
+            cozy bed breakfasts to <br />
             luxury hotels, and book with flexibility and convenience.
           </p>
         </div>
         <div class="all-pr-btns">
-          <select type="text" class="sp-inp sp-filter" required>
+          <select type="text" class="sp-inp sp-filter" id="select-reg">
             <option value="">Select Region</option>
             <option value="Zurich">Zurich</option>
             <option value="Basel">Basel</option>
@@ -87,14 +85,14 @@
             required
           />
           <a href="./hotelPage.html"
-            ><button class="sp-inp ps-search">Search</button></a
+            ><button class="sp-inp ps-search" id="reg-serach">Search</button></a
           >
         </div>
       </div>
       <!-- Login Modal -->
       <div id="loginModal" class="modal">
         <div class="modal-content">
-          <span class="close" onclick="closeLoginModal()">&times;</span>
+          <span class="close" id="loginclick" onclick="closeLoginModal()">&times;</span>
           <h2 class="hplogin">Login to our HotelCard</h2>
           <form id="loginForm">
             <label for="email" class="lpemail">E-mail *</label> <br />
