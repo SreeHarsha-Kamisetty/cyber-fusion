@@ -1,26 +1,26 @@
 
-# Cyber Fusion - HotelCard Clone
+# StayHub - HotelCard Clone
 
-Cyber Fusion is a project that involves creating a responsive website using HTML, CSS and JavaScript. The team designed the website based on Dribbble design to showcase their skills and work. Below is a comprehensive readme for the project.
+StayHub is a user-centric hotel booking platform committed to providing a delightful and convenient experience for travelers exploring the beauty of Switzerland. Our platform boasts a diverse range of accommodations to suit every traveler's preferences, from intimate bed and breakfasts to opulent hotels offering top-notch amenities.
 
 ## Table of Contents
 
 
 ## Project Overview
-Cyber Fusion is a web development project aimed at demonstrating the team's ability to create a dynamic and visually appealing website using HTML, CSS and JavaScript. It serves as a portfolio that showcases the team's skills, work, and design capabilities.
+StayHub is a web development project aimed at demonstrating the team's ability to create a dynamic and visually appealing website using HTML, CSS and JavaScript. It serves as a portfolio that showcases the team's skills, work, and design capabilities.
 
 ## Team Members
-The project was developed collaboratively by the following team members:
+The project was developed collaboratively by the following 5 team members:
 
 + **Kamisetty Sree Harsha** (Team Lead) - fw28_076
 + **Shahbaz Ahmad** - 
-+ **Prity Rastogi** - 
++ **Prity Rastogi** - fw28_163
 + **Anjali Kumari Soni** - fw28_183
 + **Rohan Kumar Sethi** - 
 
 ## Tech Stack
 
-The Cyber Fusion Hotel website was built using the following technologies and tools:
+The StayHub Hotel website was built using the following technologies and tools:
 
 + **HTML:** The foundation of the website's structure and content.
 + **CSS:** For styling and making the website visually appealing.
@@ -28,7 +28,26 @@ The Cyber Fusion Hotel website was built using the following technologies and to
 + **JSON server:** 
 
 
-# cyber-fusion
+# Usage
++ Home Page (index.html): Explore top offers and find the best hotel deals.
++ Hotel Booking Page (hotelPage.html): Search and filter hotels based on region and date of stay.
++ About Us Page (about.html): Learn more about StayHub and the services offered.
++ Contact Us Page (contact.html): Get in touch with StayHub for inquiries and support.
++ Bookings Page (bookingpage.html): Access your bookings after logging in.
++ Membership Page (membershipPage.html): Explore membership options and create an account.
 
-API Link - https://apicyberfusion.onrender.com
+
+#Getting Started
+To explore 7Heaven, simply open the index.html file in your preferred web browser. Use the top navigation bar to access different sections of the website, and utilize the search and filter options to find the perfect hotel for your stay.
+
+**API Link** - https://apicyberfusion.onrender.com
 Editing
+
+
+
+
+
+
+
+
+
