@@ -68,9 +68,10 @@ async function fetchData(url, pageNo, qparams = "") {
   try {
     if(localStorage.getItem("region")){
       qparams=`&region_like=${localStorage.getItem("region")}`
-    }else{
-      qparams="";
     }
+    //else{
+    //   qparams="";
+    // }
     let res = await fetch(`${url}?_limit=8&_page=${pageNo}${qparams}`);
     localStorage.removeItem("region");
     let totalPost = res.headers.get("X-Total-Count");
@@ -253,6 +254,7 @@ search_button.addEventListener('click',()=>{
   if(search_input.value != "default"){
     pagination[0].innerHTML = ""
     container[0].innerHTML = ""
+    console.log(search_input.value,search_text.value)
     fetchData(hotelURL,1,`&${search_input.value}_like=${search_text.value}`)
   }
 })
