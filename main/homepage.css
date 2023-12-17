@@ -125,12 +125,14 @@ main {
     justify-content: center;
     align-items: center;
     text-align: center;
+    color: #dcd8d8;
 }
 
 #phead {
     font-size: 70px;
     color:#fff;
     margin-top: 20px;
+    
     /* margin-bottom: 300px; */
     font-weight: 600;
     
@@ -571,20 +573,9 @@ main {
   #phead {
       font-size: 50px;
       /* color: black; */
-      -webkit-text-stroke: 1px #fff;
-      color: transparent;
-      background-image: linear-gradient(#fff,#fff);
-      background-repeat: no-repeat;
-      /* -webkit-background-clip: text; */
-      background-position: -600px 0;
-       animation: backcolor 5s linear infinite alternate;  
+      
   }
-  @keyframes backcolor{
-      100%{
-          background-position:0 0 ;
-      }
-  }
-
+  
   .swit-para {
       font-size: 20px;
   }
