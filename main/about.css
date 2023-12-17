@@ -87,3 +87,13 @@ h2{
     background-color: white;
     color: red;
 }
+
+@media(max-width:706px){
+    .rCardDiv{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
