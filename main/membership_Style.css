@@ -240,8 +240,9 @@ main {
 
 /* Main Section Starts here */
 .a-main{
+    margin: 0%;
     padding: 2vw;
-    background-color: rgb(242,242,242);
+    background-color: rgb(60, 11, 236);
 }
 
 
@@ -255,8 +256,13 @@ main {
     align-items: baseline center;
     text-align: center;
     padding: 2vw;
-    font-size: 4.5vh;
+    font-size: 6vh;
     font-weight: 600;
+    color: white;
+    text-shadow: 5px 5px rgb(243, 4, 4);
+}
+.a-member-text:hover{
+    text-shadow: 5px 5px 5px rgb(198, 221, 115);
 }
 .a-mcards{
     display: flex;
@@ -269,10 +275,11 @@ main {
     display: flex;
     flex-direction: column;
     background-color: white;
+    box-shadow: rgba(241, 18, 2, 0.3) 0px 19px 38px, rgba(212, 226, 7, 0.22) 0px 15px 12px;
     /* border: solid rgb(168, 165, 165) 0.2px; */
 }
 .a-each-card:hover{
-    box-shadow: rgba(219, 74, 74, 0.25) 0px 54px 55px, rgba(204, 53, 53, 0.12) 0px -12px 30px, rgba(223, 37, 37, 0.12) 0px 4px 6px, rgba(201, 37, 37, 0.17) 0px 12px 13px, rgba(238, 4, 4, 0.09) 0px -3px 5px;
+    box-shadow: rgba(230, 218, 218, 0.911) 0px 54px 55px, rgba(216, 241, 243, 0.12) 0px -12px 30px, rgba(243, 239, 239, 0.12) 0px 4px 6px, rgba(139, 230, 78, 0.17) 0px 12px 13px, rgba(205, 241, 73, 0.09) 0px -3px 5px;
 }
 .a-leftCard{
     margin-left: 0%;
@@ -351,7 +358,7 @@ main {
     border-radius: 20px;
 }
 .a-couple-card:hover{
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    box-shadow: rgba(230, 218, 218, 0.911) 0px 54px 55px, rgba(216, 241, 243, 0.12) 0px -12px 30px, rgba(243, 239, 239, 0.12) 0px 4px 6px, rgba(139, 230, 78, 0.17) 0px 12px 13px, rgba(205, 241, 73, 0.09) 0px -3px 5px;
 }
 .a-couple-img{
     width: 80%;
@@ -406,6 +413,8 @@ main {
     padding-top: 20vh;
     font-size: 8vh;
     font-weight: 700;
+    color: white;
+    text-shadow: 5px 5px 5px rgb(243, 4, 4);
 }
 .a-list{
     width: 55%;
@@ -418,11 +427,15 @@ main {
 .a-list-div{
     padding: 1vh;
     font-size: 3vh;
+    color: white;
+    background-color: #1511eb;
     font-weight: 500;
     border: none;
 }
 .a-list-div:hover{
-    text-shadow: 2px 2px gray;
+    color: rgb(8, 245, 27);
+    text-shadow: 5px 5px 5px rgb(243, 4, 4);
+
 }
 #a-PlusSign{
     color: #f70606;
@@ -433,6 +446,7 @@ main {
 .a-list-dis{
     padding: 1vh;
     height: 9vh;
+    color: white;
     font-size: 2.1vh;
 }
 #aa, #bb, #cc, #dd{
@@ -449,14 +463,14 @@ main {
 .a-more-questions{
     display: flex;
     flex-direction: row;
-    background-image: url(img/background_img.jpg);
-    color: white;
+    color: black;
 }
 .a-ask{
     width: 50%;
     padding: 13vh;
     font-size: 8vh;
     font-weight: 700;
+    text-shadow: 5px 5px 5px rgb(243, 4, 4);
 }
 
 .a-contacts{
@@ -464,6 +478,7 @@ main {
     font-weight: 548;
     padding: 16vh;
     font-size: 2.6vh;
+    text-shadow: 5px 5px 4px rgb(187, 134, 134);
 }
 .a-contacts-details{
     display: flex;
@@ -473,8 +488,16 @@ main {
 .a-no{
     margin-right: 8vh;
 }
+.a-no:hover{
+    color: #f70606;
+    text-shadow: 5px 5px 5px rgb(73, 71, 71);
+}
 .a-email{
     margin-left: 8vh;
+}
+.a-email:hover{
+    color: #f70606;
+    text-shadow: 5px 5px 5px rgb(73, 71, 71);
 }
 
 /* AnyMore Questions Section Ends here */
@@ -496,6 +519,9 @@ main {
         flex-direction: column;
         margin: 0%;
     }
+    /* .a-member-text{
+        font-size: 3vh;
+    } */
     .a-each-card{
         width: 100%;
     }
@@ -590,6 +616,18 @@ main {
         padding-left: 1.5vw;
         padding-right: 1.5vw;
         width: 100%;
+    }
+    .a-contacts-details{
+        display: flex;
+        flex-direction: column;
+    }
+    .a-no{
+        margin-right: 0%;
+        padding: 1vh;
+    }
+    .a-email{
+        margin-left: 0%;
+        padding: 1vh;
     }
     /* Anymore questions styling ends here */
 }
