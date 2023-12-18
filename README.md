@@ -44,6 +44,9 @@ To explore Stayhub visit (deployed link goes here). Use the top navigation bar t
 ## Homepage
 <img src="https://github.com/SreeHarsha-Kamisetty/cyber-fusion/assets/128986644/51bc32bd-8a13-4f2d-aced-7d336829d7ed">
 
+## Booking Page
+<img src"https://github.com/SreeHarsha-Kamisetty/cyber-fusion/assets/128986644/56314c0e-0919-49ae-b95a-ae42224f4294">
+
 
 
 
