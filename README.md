@@ -39,7 +39,7 @@ The StayHub Hotel website was built using the following technologies and tools:
 
 
 # Getting Started
-To explore Stayhub visit (deployed link goes here). Use the top navigation bar to access different sections of the website, and utilize the search and filter options to find the perfect hotel for your stay.
+To explore Stayhub visit https://stayhub-com.netlify.app/. Use the top navigation bar to access different sections of the website, and utilize the search and filter options to find the perfect hotel for your stay.
 
 ## Homepage
 <img src="https://github.com/SreeHarsha-Kamisetty/cyber-fusion/assets/128986644/51bc32bd-8a13-4f2d-aced-7d336829d7ed">
