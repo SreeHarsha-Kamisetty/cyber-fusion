@@ -183,7 +183,11 @@ async function createNewData(url){
       body:JSON.stringify(newUserData),
     });
     const updateData = await res.json();
-    fetchData(userURL);
+    console.log(updateData)
+    localStorage.setItem('userid',updateData.id)
+    localStorage.setItem('user_name',updateData.username)
+    localStorage.setItem('login',true)
+   
   }catch(error){
     console.log(error);
   }
@@ -191,12 +195,19 @@ async function createNewData(url){
 userCreateBtn.addEventListener("click",(e)=>{
   e.preventDefault();
   createNewData(userURL);
-  alert("Login Successfully....!")
-  const userNamep = addNameInput.value;
+  alert("Registered Successfully....!")
+  // const userNamep = addNameInput.value;
   closeRegForm();
-  newUserp.innerHTML = `<div><span id="user-image-pr" class="usericonn">Hi, ${userNamep}</span></div>
-`;
-  signout.style.display = 'block';
+  user_name = localStorage.getItem('user_name')
+  newUserp.innerHTML = `<div><span id="user-image-pr" class="usericonn"><button id="logout-btnp"> ${user_name}</button></span></div>`;
+  let logoutp = document.getElementById("logout-btnp");
+   logoutp.addEventListener("click",(e)=>{
+    // e.preventDefault();
+    console.log(e);
+    logoutUser();
+  })
+
+  // signout.style.display = 'block';
 })
 // Login data-------
 
