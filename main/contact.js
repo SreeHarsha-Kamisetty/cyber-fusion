@@ -28,3 +28,18 @@ function checkUserLogin(){
   }
 }
 checkUserLogin();
+
+// logic for booking button 
+
+let booking = document.getElementById('booking');
+
+booking.addEventListener('click',(e) =>{
+  e.preventDefault();
+  let login = localStorage.getItem('login');
+  if(login == "true"){
+    window.location.href = 'bookingpage.html'
+  }
+  else{
+    alert("Please login to access your bookings")
+  }
+})
