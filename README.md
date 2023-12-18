@@ -51,13 +51,13 @@ To explore Stayhub visit (deployed link goes here). Use the top navigation bar t
 <img src="https://github.com/SreeHarsha-Kamisetty/cyber-fusion/assets/128986644/4c60efec-b38e-425d-80db-5d11a957c024">
 
 ## Payment
-<img src="[https://github.com/SreeHarsha-Kamisetty/cyber-fusion/assets/128986644/397339f7-94a0-425c-bb35-76562e8e3016](https://github.com/SreeHarsha-Kamisetty/cyber-fusion/assets/128986644/727ef164-98be-472a-bbb7-e1e3f569d556)">
+<img src="https://github.com/SreeHarsha-Kamisetty/cyber-fusion/assets/128986644/727ef164-98be-472a-bbb7-e1e3f569d556">
 
 ## Contact Us
-<img src="[https://github.com/SreeHarsha-Kamisetty/cyber-fusion/assets/128986644/397339f7-94a0-425c-bb35-76562e8e3016](https://github.com/SreeHarsha-Kamisetty/cyber-fusion/assets/128986644/68028f59-17a0-4b8c-8b97-23ad7fab465a)">
+<img src="https://github.com/SreeHarsha-Kamisetty/cyber-fusion/assets/128986644/68028f59-17a0-4b8c-8b97-23ad7fab465a">
 
 ## Previous Bookings
-<img src="[https://github.com/SreeHarsha-Kamisetty/cyber-fusion/assets/128986644/397339f7-94a0-425c-bb35-76562e8e3016](https://github.com/SreeHarsha-Kamisetty/cyber-fusion/assets/128986644/8a8422bf-94a3-4d32-87e4-fefda84dd22e)">
+<img src="https://github.com/SreeHarsha-Kamisetty/cyber-fusion/assets/128986644/8a8422bf-94a3-4d32-87e4-fefda84dd22e">
 
 ## About Us
 <img src="https://github.com/SreeHarsha-Kamisetty/cyber-fusion/assets/128986644/25ede97a-dcb6-48e6-8678-14f2c03776f2">
