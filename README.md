@@ -3,7 +3,7 @@
 
 StayHub is a user-centric hotel booking platform committed to providing a delightful and convenient experience for travelers exploring the beauty of Switzerland. Our platform boasts a diverse range of accommodations to suit every traveler's preferences, from intimate bed and breakfasts to opulent hotels offering top-notch amenities.
 
-## Table of Contents
+# Table of Contents
 
 
 ## Project Overview
@@ -29,7 +29,7 @@ The StayHub Hotel website was built using the following technologies and tools:
 + **JSON server:**  Deployed at https://apicyberfusion.onrender.com . Serves as our backend server to store all the information related to the website
 
 
-# Usage
+## Usage
 + Home Page : Explore top offers and find the best hotel deals.
 + Hotel Booking Page : Search and filter hotels based on region and date of stay.
 + About Us Page : Learn more about StayHub and the services offered.
