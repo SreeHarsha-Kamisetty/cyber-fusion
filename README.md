@@ -1,5 +1,5 @@
 
-# StayHub - HotelCard Clone
+# StayHub - Hotel Booking website
 
 StayHub is a user-centric hotel booking platform committed to providing a delightful and convenient experience for travelers exploring the beauty of Switzerland. Our platform boasts a diverse range of accommodations to suit every traveler's preferences, from intimate bed and breakfasts to opulent hotels offering top-notch amenities.
 
@@ -25,7 +25,7 @@ The StayHub Hotel website was built using the following technologies and tools:
 + **HTML:** The foundation of the website's structure and content.
 + **CSS:** For styling and making the website visually appealing.
 + **JavaScript:** used for enhancing the interactivity and dynamic behavior of the website.
-+ **JSON server:** 
++ **JSON server:**  Deployed at https://apicyberfusion.onrender.com . Serves as our backend server to store all the information related to the website
 
 
 # Usage
@@ -38,11 +38,10 @@ The StayHub Hotel website was built using the following technologies and tools:
 
 
 # Getting Started
-To explore 7Heaven, simply open the index.html file in your preferred web browser. Use the top navigation bar to access different sections of the website, and utilize the search and filter options to find the perfect hotel for your stay.
+To explore Stayhub visit (deployed link goes here). Use the top navigation bar to access different sections of the website, and utilize the search and filter options to find the perfect hotel for your stay.
 
 
-**API Link** - https://apicyberfusion.onrender.com
-Editing
+
 
 
 
