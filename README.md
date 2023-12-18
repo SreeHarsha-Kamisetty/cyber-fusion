@@ -3,8 +3,8 @@
 
 StayHub is a user-centric hotel booking platform committed to providing a delightful and convenient experience for travelers exploring the beauty of Switzerland. Our platform boasts a diverse range of accommodations to suit every traveler's preferences, from intimate bed and breakfasts to opulent hotels offering top-notch amenities.
 
-# Table of Contents
-
+# Table of Contents 
+<a href="Project Overview">Project Overview</a>
 
 ## Project Overview
 StayHub is a web development project aimed at demonstrating the team's ability to create a dynamic and visually appealing website using HTML, CSS and JavaScript. It serves as a portfolio that showcases the team's skills, work, and design capabilities.
@@ -61,6 +61,9 @@ To explore Stayhub visit https://stayhub-com.netlify.app/. Use the top navigatio
 
 ## About Us
 <img src="https://github.com/SreeHarsha-Kamisetty/cyber-fusion/assets/128986644/25ede97a-dcb6-48e6-8678-14f2c03776f2">
+
+## Search Functionality
+<img src="https://github.com/SreeHarsha-Kamisetty/cyber-fusion/assets/128986644/c3536279-8d93-4f95-9250-0cdb13524dff">
 
 
 
