@@ -5,23 +5,14 @@ StayHub is a user-centric hotel booking platform committed to providing a deligh
 
 # Table of Contents 
 - [Project Overview](#project-overview)
-- [Team Members](#team-members)
 - [Tech Stack](#tech-stack)
 - [Usage](#usage)
 - [Gettin Started](#getting-started)
 - [Screenshots](#screenshots)
+- [Team Members](#team-members)
 
 ## Project Overview
 StayHub is a web development project aimed at demonstrating the team's ability to create a dynamic and visually appealing website using HTML, CSS and JavaScript. It serves as a portfolio that showcases the team's skills, work, and design capabilities.
-
-## Team Members
-The project was developed collaboratively by the following 5 team members:
-
-+ **Kamisetty Sree Harsha** (Team Lead) - fw28_076
-+ **Shahbaz Ahmad** - fw28_108
-+ **Prity Rastogi** - fw28_163
-+ **Anjali Kumari Soni** - fw28_183
-+ **Rohan Kumar Sethi** - fw28_214
 
 ## Tech Stack
 
@@ -71,6 +62,26 @@ To explore Stayhub visit https://stayhub-com.netlify.app/. Use the top navigatio
 
 ## Search Functionality
 <img src="https://github.com/SreeHarsha-Kamisetty/cyber-fusion/assets/128986644/c3536279-8d93-4f95-9250-0cdb13524dff">
+
+
+## Team Members
+The project was developed collaboratively by the following 5 team members:
+
++ **Kamisetty Sree Harsha** (Team Lead) - fw28_076
+   <a href="https://www.linkedin.com/in/sree-harsha-kamisetty-9846b32a0/">LinkedIn</a>
+     <a href="https://github.com/SreeHarsha-Kamisetty">Github</a>
++ **Shahbaz Ahmad** - fw28_108
+  <a href="https://www.linkedin.com/in/shahbaz-ahmad-521361153/">LinkedIn</a>
+     <a href="https://github.com/iammshahbaz">Github</a>
++ **Prity Rastogi** - fw28_163
+    <a href="https://www.linkedin.com/in/prity-rastogi-693074249/">LinkedIn</a>
+     <a href="https://github.com/PrityRastogi16">Github</a>
++ **Anjali Kumari Soni** - fw28_183
+  <a href="https://www.linkedin.com/in/anjalisoni739/">LinkedIn</a>
+     <a href="https://github.com/Anjali0739">Github</a>
++ **Rohan Kumar Sethi** - fw28_214
+   <a href="www.linkedin.com/in/rohansethi347">LinkedIn</a>
+     <a href="https://github.com/ROHANKUMAR347">Github</a>
 
 
 
