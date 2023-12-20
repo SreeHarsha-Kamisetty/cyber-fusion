@@ -136,6 +136,7 @@ fetch(`https://apicyberfusion.onrender.com/hotels/${hotelid}`)
 
 console.log("Hotel id is ",hotelid)
 function CreateCards(details) {
+  let container = document.getElementsByClassName("a-container");
   // container.innerHTML = "";
   details.forEach((element) => {
     let cardContainer = document.createElement("div");
@@ -200,6 +201,7 @@ function CreateCards(details) {
     // let hr2=document.createElement("hr");
 
     container1.append(cardContainer);
+    container[0].append(container1)
     payment_desc.innerText = element.name
     payment_price.innerText = `${element.price} CHF`
     total_price.innerText = `${element.price} CHF`
