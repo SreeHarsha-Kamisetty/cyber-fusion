@@ -415,9 +415,9 @@ font-family: 'Poppins', sans-serif;
     transform: scale(1.01);
 }
 .card-img {
-    width: 40%;
-    object-fit: cover;
-    padding: 3vh;
+    width: 40% !important;
+    object-fit: cover !important;
+    padding: 3vh !important;
 }
 .card-details {
     width: 60%;
